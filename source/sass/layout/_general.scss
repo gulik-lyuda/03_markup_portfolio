@@ -1,5 +1,28 @@
 body {
-	background: #fff;	
+	background: $white;
 
-	font-family: 'TitilliumText22LLight', Arial, sans-serif;
+	color: $grey;
+	font-family: $ff-s;
+	font-size: .875rem;
+	line-height: 1.6;
+}
+
+h1, h2, p {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+h1 {
+	line-height: 1;
+	font-size: 3.125rem;
+
+	span {
+		display: block;
+
+		@include sans-serif($fs: 5.5rem, $color: $accent);
+	}
+}
+
+h2 	{
+	@include sans-serif($fs: 2rem);
 }
