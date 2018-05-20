@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>Gulik Lyudmyla's Portfolio</title>
-
-
+    
     <!-- Connect our stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
@@ -12,25 +14,115 @@
     <link rel="icon" href="images/icons/wizard.ico" type="image/x-icon"/>
 </head>
 <body>
-    <div class="page-wrapper">
-        <header>
-
-            <nav>
-
-            </nav>
-        </header>
-
-        <main class="wrapper">
-
-        </main>
-
-        <footer>
-
-        </footer>
+    <div class="hero">
+        <h1><span>Welcome to my</span> Portfolio</h1>
     </div>
 
+    <section class="welcome">
+        <div class="welcome-left">
+            <img src="images/backgrounds/welcome-left.png" alt="a laptop on a wood table">
+        </div>
+        <div class="welcome-middle">
+            <h2>Making it happen</h2>
+            <p>Lorem ipsum dolor sit amet, ei posse noluisse lucilius est, facete facilisis id mel, odio eleifend suscipiantur ut nec. Id autem ceteros perpetua vel, eum admodum temporibus at. Ad dico fuisset molestiae sea, ex ius ullum facete prodesset. Natum debitis conclusionemque sit id. Dolor graece detracto eum in. </p>
+        </div>
+        <div class="welcome right">
+            <img src="images/backgrounds/welcome-right.png" alt="two computers and a laptop on a table">
+        </div>
+    </section>
+
+    <section class="about-me">
+        <img class="about-image" src="images/content/lyudmyla-portfolio.png" alt="A picture of Lyudmyla Gulik">
+        <h1 class="about-title">Lyudmyla Portfolio</h1>
+        <h2 class="about-subtitle">designer & developer</h2>
+        <div class="about-text">
+            <p>Lorem ipsum dolor sit amet, ei posse noluisse lucilius est, facete facilisis id mel, odio eleifend suscipiantur ut nec. Id autem ceteros perpetua vel, eum admodum temporibus at. Ad dico fuisset molestiae sea, ex ius ullum facete prodesset. Natum debitis conclusionemque sit id. Dolor graece detracto eum in.</p>
+            <p>Velit accusamus theophrastus usu cu. Te vis cibo impedit scribentur, mei dicit aeterno ei. Ponderum mandamus at has, ferri dolorum perfecto et cum. Alii semper expetenda sit an. Sadipscing intellegebat eum ex.</p>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h1>My Work</h1>
+            
+        <!-- Portfolio Items -->
+        <div class="portfolio-items">
+            <!-- Portfolio Item 1 -->
+            <figure class="portfolio-item featured">
+                <img src="images/content/portfolio-01.jpg" alt="Portfolio Item Image">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-description">A short description of the project</p>
+                    <a href="#" class="portfolio-link">More Info</a>
+                </figcaption>
+            </figure>
+            <!-- Portfolio Item 2 -->
+            <figure class="portfolio-item">
+                <img src="images/content/portfolio-02.jpg" alt="Portfolio Item Image">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-description">A short description of the project</p>
+                    <a href="#" class="portfolio-link">More Info</a>
+                </figcaption>
+            </figure>
+            <!-- Portfolio Item 3 -->
+            <figure class="portfolio-item">
+                <img src="images/content/portfolio-03.jpg" alt="Portfolio Item Image">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-description">A short description of the project</p>
+                    <a href="#" class="portfolio-link">More Info</a>
+                </figcaption>
+            </figure>
+            <!-- Portfolio Item 4 -->
+            <figure class="portfolio-item">
+                <img src="images/content/portfolio-04.jpg" alt="Portfolio Item Image">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-description">A short description of the project</p>
+                    <a href="#" class="portfolio-link">More Info</a>
+                </figcaption>
+            </figure>
+            <!-- Portfolio Item 5 -->
+            <figure class="portfolio-item">
+                <img src="images/content/portfolio-05.jpg" alt="Portfolio Item Image">
+                <figcaption>
+                    <h2 class="portfolio-title">Project Name</h2>
+                    <p class="portfolio-description">A short description of the project</p>
+                    <a href="#" class="portfolio-link">More Info</a>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1>Contact me</h1>
+        <form action="">
+            <label class="name">Name:
+                <input type="text" id="name">
+            </label>
+            
+            <label class="email">Email:
+                <input type="text" id="email">
+            </label>
+
+            <label class="message">Message:
+                <textarea name="" id="message"></textarea>
+            </label>
+        </form>    
+    </section>
+    
+    <footer>
+        <p>Follow me on social media</p>
+
+        <div class="social-icons">
+            <img class="social-icon" src="images/icons/twitter.svg" alt="Twitter Icon">
+            <img class="social-icon" src="images/icons/instagram.svg" alt="Instargram Icon">
+            <img class="social-icon" src="images/icons/github.svg" alt="Github Icon">
+        </div>
+
+        <p class="copyright">Copyright 2018 Lyudmyla Gulik</p>
+    </footer>
     <!-- Add all our scripts -->
     <script src="js/main.js"></script>
-
 </body>
 </html>
