@@ -7,6 +7,10 @@ body {
 	line-height: 1.6;
 }
 
+img {
+	max-width: 100%;
+}
+
 h1, h2, p {
 	margin-top: 0;
 	margin-bottom: 1em;
@@ -15,12 +19,6 @@ h1, h2, p {
 h1 {
 	line-height: 1;
 	font-size: 3.125rem;
-
-	span {
-		display: block;
-
-		@include sans-serif($fs: 5.5rem, $color: $accent);
-	}
 }
 
 h2 	{

@@ -1,0 +1,41 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100vh;
+	background-image: url('../images/backgrounds/header-bg.png');
+	background-size: cover;
+	background-position: center;
+
+	h1 {
+		font-size: 1.5rem;
+		font-weight: $fw-n;
+		color: $dark-accent;
+		line-height: 2;
+		text-align: center;
+
+		span {
+			display: block;
+
+			@include sans-serif($fs: 5.5rem, $color: $accent);
+		}
+
+		&::before, &::after {
+			display: block;
+			
+			content: '';
+			width: 30%;
+			height: 1px;
+			background: $dark-accent;
+		}
+
+		&::before {
+			margin: 0 auto 2em;
+		}
+		
+		&::after {
+			margin: 2em auto 0;
+		}
+	}
+}

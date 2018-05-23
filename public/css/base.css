@@ -5807,6 +5807,9 @@ body {
   font-size: .875rem;
   line-height: 1.6; }
 
+img {
+  max-width: 100%; }
+
 h1, h2, p {
   margin-top: 0;
   margin-bottom: 1em; }
@@ -5814,19 +5817,94 @@ h1, h2, p {
 h1 {
   line-height: 1;
   font-size: 3.125rem; }
-  h1 span {
-    display: block;
-    font-size: 5.5rem;
-    letter-spacing: 0.3em;
-    color: #03afc2;
-    text-transform: uppercase;
-    line-height: 1;
-    font-family: "Six Caps", sans-serif; }
 
 h2 {
   font-size: 2rem;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.15em;
   color: #606060;
   text-transform: uppercase;
   line-height: 1;
-  font-family: "Six Caps", sans-serif; }
+  font-family: "Six Caps", sans-serif;
+  font-weight: 400; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  background-image: url("../images/backgrounds/header-bg.png");
+  background-size: cover;
+  background-position: center; }
+  header h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #223843;
+    line-height: 2;
+    text-align: center; }
+    header h1 span {
+      display: block;
+      font-size: 5.5rem;
+      letter-spacing: 0.15em;
+      color: #03afc2;
+      text-transform: uppercase;
+      line-height: 1;
+      font-family: "Six Caps", sans-serif;
+      font-weight: 400; }
+    header h1::before, header h1::after {
+      display: block;
+      content: '';
+      width: 30%;
+      height: 1px;
+      background: #223843; }
+    header h1::before {
+      margin: 0 auto 2em; }
+    header h1::after {
+      margin: 2em auto 0; }
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .intro h2 {
+    color: #fff; }
+    .intro h2::after {
+      display: block;
+      margin: 1em auto 0;
+      content: '';
+      width: 20%;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.5); }
+  @supports (display: grid) {
+    .intro {
+      display: grid;
+      grid-template-columns: minmax(4em, 1fr) minmax(auto, 30em) minmax(4em, 1fr); } }
+
+.intro-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.5em 5vw;
+  background: #223843;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center; }
+
+.intro-left img,
+.intro-right img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 100%;
+  min-width: 100%; }

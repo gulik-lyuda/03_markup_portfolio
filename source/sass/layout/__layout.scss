@@ -1,2 +1,6 @@
 @import "general";
-@import "content"; //or some imports of files for separate blocks if we use BEM metodology
+@import "header"; 
+@import "intro";
+@import "portfolio";
+@import "contact";
+@import "footer";
