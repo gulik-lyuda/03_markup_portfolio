@@ -5800,6 +5800,16 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.about-me {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 50em; }
+
+.about-me::after {
+  display: block;
+  content: '';
+  clear: both; }
+
 body {
   background: #fff;
   color: #a7a7a7;
@@ -5908,3 +5918,37 @@ header {
      object-fit: cover;
   min-height: 100%;
   min-width: 100%; }
+
+.about-me {
+  margin-top: 3em; }
+
+.about-image {
+  max-height: 25em; }
+  @media (min-width: 42em) {
+    .about-image {
+      float: left;
+      margin-right: 1em; } }
+
+.about-title {
+  margin-bottom: .25em;
+  color: #03afc2;
+  font-weight: 900; }
+
+.about-subtitle {
+  margin: .5em 0; }
+
+@supports (display: grid) {
+  .about-me {
+    display: grid;
+    grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end]; }
+  .about-image {
+    grid-column: port / img;
+    grid-row: 1 / 2; }
+  .about-title {
+    grid-column: name / port;
+    grid-row: 1 / 2;
+    -ms-flex-item-align: end;
+        align-self: end; }
+  .about-subtitle,
+  .about-text {
+    grid-column: port / port; } }
