@@ -5800,16 +5800,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.about-me {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 50em; }
-
-.about-me::after {
-  display: block;
-  content: '';
-  clear: both; }
-
 body {
   background: #fff;
   color: #a7a7a7;
@@ -5841,6 +5831,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5851,17 +5845,20 @@ header {
   background-image: url("../images/backgrounds/header-bg.png");
   background-size: cover;
   background-position: center; }
+  header .logo {
+    margin: 2em 5em;
+    max-height: 15em; }
   header h1 {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #223843;
+    color: #79242f;
     line-height: 2;
     text-align: center; }
     header h1 span {
       display: block;
       font-size: 5.5rem;
       letter-spacing: 0.15em;
-      color: #03afc2;
+      color: #ca0022;
       text-transform: uppercase;
       line-height: 1;
       font-family: "Six Caps", sans-serif;
@@ -5871,7 +5868,7 @@ header {
       content: '';
       width: 30%;
       height: 1px;
-      background: #223843; }
+      background: #79242f; }
     header h1::before {
       margin: 0 auto 2em; }
     header h1::after {
@@ -5907,7 +5904,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 2.5em 5vw;
-  background: #223843;
+  background: #79242f;
   color: rgba(255, 255, 255, 0.7);
   text-align: center; }
 
@@ -5920,7 +5917,15 @@ header {
   min-width: 100%; }
 
 .about-me {
-  margin-top: 3em; }
+  width: 90%;
+  margin: 0 auto;
+  max-width: 60em;
+  margin-top: 5em;
+  margin-bottom: 5em; }
+  .about-me::after {
+    display: block;
+    content: '';
+    clear: both; }
 
 .about-image {
   max-height: 25em; }
@@ -5931,7 +5936,7 @@ header {
 
 .about-title {
   margin-bottom: .25em;
-  color: #03afc2;
+  color: #ca0022;
   font-weight: 900; }
 
 .about-subtitle {
@@ -5952,3 +5957,85 @@ header {
   .about-subtitle,
   .about-text {
     grid-column: port / port; } }
+
+.portfolio {
+  background: #e8e9eb;
+  padding: 5em 0; }
+  .portfolio h1 {
+    color: #ca0022;
+    font-weight: 900;
+    text-align: center; }
+
+.portfolio-items {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.portfolio-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  position: relative;
+  overflow: hidden; }
+  .portfolio-item img {
+    display: block;
+    width: 100%; }
+  .portfolio-item figcaption {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 2em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: rgba(121, 36, 47, 0.75);
+    color: #fff;
+    text-align: left;
+    -webkit-transition: top ease-in-out 250ms;
+    transition: top ease-in-out 250ms; }
+    .portfolio-item figcaption .portfolio-title {
+      margin-bottom: auto;
+      color: #fff;
+      font-size: 2.5rem; }
+    .portfolio-item figcaption .portfolio-description {
+      display: none; }
+    .portfolio-item figcaption .portfolio-link {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      color: #fff;
+      font-weight: 900;
+      font-size: 1.1rem;
+      text-decoration: none;
+      border-bottom: 2px solid #fff; }
+      .portfolio-item figcaption .portfolio-link::after {
+        display: inline-block;
+        height: .8em;
+        width: .8em;
+        margin-left: .5em;
+        content: url("../images/icons/arrow-white.svg"); }
+  .portfolio-item:hover figcaption, .portfolio-item:focus figcaption {
+    top: 0; }
+
+@supports (display: grid) {
+  .portfolio-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em; }
+  .featured figcaption .portfolio-title {
+    font-size: 5rem; }
+  .featured figcaption .portfolio-description {
+    display: block; }
+  .portfolio-item.featured {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2; } }

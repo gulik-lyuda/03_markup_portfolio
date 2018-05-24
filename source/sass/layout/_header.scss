@@ -1,5 +1,6 @@
 header {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
@@ -7,6 +8,11 @@ header {
 	background-image: url('../images/backgrounds/header-bg.png');
 	background-size: cover;
 	background-position: center;
+
+	.logo {
+		margin: 2em 5em;
+		max-height: 15em;
+	}
 
 	h1 {
 		font-size: 1.5rem;

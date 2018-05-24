@@ -1,0 +1,112 @@
+.portfolio {
+	background: $light-grey;
+	padding: 5em 0;
+
+	h1 {
+		color: $accent;
+		font-weight: $fw-b;
+		text-align: center;
+	}
+}
+
+.portfolio-items {
+	@include container($max-width: 75em);
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio-item {
+	flex: 1 1 10rem;
+
+	position: relative;
+	overflow: hidden;
+
+	img {
+		display: block;
+		width: 100%;
+	}
+
+	figcaption {
+		position: absolute;
+		top: 100%;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		padding: 2em;
+
+		display: flex;
+		flex-direction: column;
+
+		background: rgba($dark-accent, .75);
+		color: $white;
+		text-align: left; 
+
+		transition: top ease-in-out 250ms;
+
+		.portfolio-title {
+			margin-bottom: auto;
+
+			color: $white;
+			font-size: 2.5rem;
+		}
+
+		.portfolio-description {
+			display: none;
+		}
+
+		.portfolio-link {
+			align-self: flex-start;
+
+			color: $white;
+			font-weight: $fw-b;
+			font-size: 1.1rem;
+			text-decoration: none;
+
+			border-bottom: 2px solid $white;
+
+			&::after {
+				display: inline-block;
+				height: .8em;
+				width: .8em;
+				margin-left: .5em;
+
+				content: url('../images/icons/arrow-white.svg');
+			}
+		}
+	}
+
+	&:hover,
+	&:focus {  //&:focus is just for mobile devices, where &:hover doesn't work
+		figcaption {
+			top: 0;
+		}
+	}
+}
+
+// if our browser supports grid layout we're going to use it
+// instead of flex layout
+@supports (display: grid) {
+	.portfolio-items {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1em;
+	}
+
+.featured {
+	figcaption {
+		.portfolio-title {
+			font-size: 5rem;
+		}
+
+		.portfolio-description {
+			display: block;
+		}
+	}
+}
+
+	.portfolio-item.featured	{
+		grid-column: 1 / span 2;
+		grid-row: 1 / span 2;
+	}
+}
