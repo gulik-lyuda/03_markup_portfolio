@@ -6039,3 +6039,55 @@ header {
   .portfolio-item.featured {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2; } }
+
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 60em;
+  padding: 5em 0; }
+  .contact h1 {
+    color: #ca0022;
+    font-weight: 900;
+    text-align: center; }
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+label {
+  display: block;
+  margin-top: 1em;
+  color: #606060; }
+
+input,
+textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: .75em;
+  background: #fbfbfc;
+  border: 1px solid #e8e9eb;
+  font-size: 1.2rem; }
+
+.button {
+  display: inline-block;
+  width: auto;
+  margin-top: 1em;
+  margin-left: auto;
+  padding: .5em 1.5em;
+  background: #ca0022;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 0.15em;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: "Six Caps", sans-serif;
+  font-weight: 400; }
