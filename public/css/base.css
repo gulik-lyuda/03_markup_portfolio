@@ -6091,3 +6091,29 @@ textarea {
   line-height: 1;
   font-family: "Six Caps", sans-serif;
   font-weight: 400; }
+
+footer {
+  padding: 5em 0;
+  background: #79242f;
+  text-align: center; }
+  footer .social-icons {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 15em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1.75em auto 4em; }
+    footer .social-icons .social-icon {
+      width: 25%;
+      height: 25%; }
+  footer .copyright::before {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 15%;
+    margin: 4em auto;
+    background: rgba(255, 255, 255, 0.15); }
