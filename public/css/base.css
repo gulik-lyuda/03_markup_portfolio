@@ -5806,6 +5806,9 @@ body {
   font-family: "Merriweather", serif;
   font-size: .875rem;
   line-height: 1.6; }
+  @media (min-width: 50em) {
+    body {
+      font-size: 1.125rem; } }
 
 img {
   max-width: 100%; }
@@ -5815,8 +5818,12 @@ h1, h2, p {
   margin-bottom: 1em; }
 
 h1 {
+  color: #ca0022;
   line-height: 1;
   font-size: 3.125rem; }
+  @media (min-width: 50em) {
+    h1 {
+      font-size: 4.25rem; } }
 
 h2 {
   font-size: 2rem;
@@ -5826,6 +5833,9 @@ h2 {
   line-height: 1;
   font-family: "Six Caps", sans-serif;
   font-weight: 400; }
+  @media (min-width: 50em) {
+    h2 {
+      font-size: 3rem; } }
 
 header {
   display: -webkit-box;
@@ -5854,6 +5864,9 @@ header {
     color: #79242f;
     line-height: 2;
     text-align: center; }
+    @media (min-width: 50em) {
+      header h1 {
+        font-size: 2vw; } }
     header h1 span {
       display: block;
       font-size: 5.5rem;
@@ -5863,6 +5876,9 @@ header {
       line-height: 1;
       font-family: "Six Caps", sans-serif;
       font-weight: 400; }
+      @media (min-width: 50em) {
+        header h1 span {
+          font-size: 7vw; } }
     header h1::before, header h1::after {
       display: block;
       content: '';
@@ -5936,7 +5952,6 @@ header {
 
 .about-title {
   margin-bottom: .25em;
-  color: #ca0022;
   font-weight: 900; }
 
 .about-subtitle {
@@ -5945,10 +5960,14 @@ header {
 @supports (display: grid) {
   .about-me {
     display: grid;
-    grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end]; }
+    grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end];
+    grid-column-gap: .5em; }
   .about-image {
     grid-column: port / img;
     grid-row: 1 / 2; }
+    @media (min-width: 50em) {
+      .about-image {
+        grid-row: 1 / 4; } }
   .about-title {
     grid-column: name / port;
     grid-row: 1 / 2;
@@ -5956,13 +5975,20 @@ header {
         align-self: end; }
   .about-subtitle,
   .about-text {
-    grid-column: port / port; } }
+    grid-column: port / port; }
+    @media (min-width: 50em) {
+      .about-subtitle,
+      .about-text {
+        grid-column: image-end / port-end; } }
+  .about-subtitle {
+    grid-row: 2 / 3; }
+  .about-text {
+    grid-row: 3 / 4; } }
 
 .portfolio {
   background: #e8e9eb;
   padding: 5em 0; }
   .portfolio h1 {
-    color: #ca0022;
     font-weight: 900;
     text-align: center; }
 
@@ -6032,6 +6058,9 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em; }
+    @media (min-width: 50em) {
+      .portfolio-items {
+        grid-template-columns: repeat(4, 1fr); } }
   .featured figcaption .portfolio-title {
     font-size: 5rem; }
   .featured figcaption .portfolio-description {
@@ -6058,6 +6087,20 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  @supports (display: grid) {
+    @media (min-width: 50em) {
+      form {
+        display: grid;
+        grid-column-gap: 1em;
+        grid-template-areas: "name email" "message message" "	.		button"; }
+        form .name {
+          grid-area: name; }
+        form .email {
+          grid-area: email; }
+        form .message {
+          grid-area: message; }
+        form .button {
+          grid-area: button; } } }
 
 label {
   display: block;
@@ -6070,14 +6113,19 @@ textarea {
           box-sizing: border-box;
   display: block;
   width: 100%;
+  min-width: 15em;
   padding: .75em;
   background: #fbfbfc;
   border: 1px solid #e8e9eb;
   font-size: 1.2rem; }
 
+textarea {
+  height: 10em; }
+
 .button {
   display: inline-block;
   width: auto;
+  min-width: auto;
   margin-top: 1em;
   margin-left: auto;
   padding: .5em 1.5em;

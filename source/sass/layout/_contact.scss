@@ -13,6 +13,36 @@ form {
 	display: flex;
 	flex-direction: column;
 	
+// if our browser supports grid layout we're going to use it
+// instead of flex layout
+	@supports (display: grid) {
+		@include mq {
+			display: grid;
+			grid-column-gap: 1em;
+			grid-template-areas: 
+				"name email"
+				"message message"
+				"	.		button";
+
+			.name {
+				 grid-area: name;
+			}
+
+			.email {
+				grid-area: email;
+			}
+
+			.message {
+				grid-area: message;
+			}
+
+			.button {
+				grid-area: button;
+			}
+		}
+
+		
+	}
 }
 
 label {
@@ -27,6 +57,7 @@ textarea {
 	box-sizing: border-box;
 	display: block;
 	width: 100%;
+	min-width: 15em;
 	padding: .75em;
 
 	background: lighten($light-grey, 7%);
@@ -35,9 +66,14 @@ textarea {
 	font-size: 1.2rem;
 }
 
+textarea {
+	height: 10em;
+}
+
 .button {
 	display: inline-block;
 	width: auto;
+	min-width: auto;
 	margin-top: 1em;
 	margin-left: auto;
 	padding: .5em 1.5em;

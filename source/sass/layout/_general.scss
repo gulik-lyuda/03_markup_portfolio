@@ -5,6 +5,10 @@ body {
 	font-family: $ff-s;
 	font-size: .875rem;
 	line-height: 1.6;
+
+	@include mq {
+		font-size: 1.125rem;
+	}
 }
 
 img {
@@ -17,10 +21,19 @@ h1, h2, p {
 }
 
 h1 {
+	color: $accent;
 	line-height: 1;
 	font-size: 3.125rem;
+
+	@include mq {
+		font-size: 4.25rem;
+	}
 }
 
 h2 	{
 	@include sans-serif($fs: 2rem);
+
+	@include mq {
+		font-size: 3rem;
+	}
 }

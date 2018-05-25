@@ -3,7 +3,6 @@
 	padding: 5em 0;
 
 	h1 {
-		color: $accent;
 		font-weight: $fw-b;
 		text-align: center;
 	}
@@ -91,6 +90,10 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 1em;
+
+		@include mq {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 
 .featured {

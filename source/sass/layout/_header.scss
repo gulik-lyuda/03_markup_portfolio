@@ -21,10 +21,18 @@ header {
 		line-height: 2;
 		text-align: center;
 
+		@include mq {
+			font-size: 2vw;
+		}
+
 		span {
 			display: block;
 
 			@include sans-serif($fs: 5.5rem, $color: $accent);
+		
+			@include mq {
+				font-size: 7vw;
+			}
 		}
 
 		&::before, &::after {
