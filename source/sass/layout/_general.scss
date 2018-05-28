@@ -1,4 +1,6 @@
 body {
+	overflow-x: hidden; // don't scroll invisible part when nav is open
+
 	background: $white;
 
 	color: $grey;

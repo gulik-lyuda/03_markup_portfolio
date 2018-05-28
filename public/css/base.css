@@ -5801,6 +5801,7 @@ button.close {
     display: none !important; } }
 
 body {
+  overflow-x: hidden;
   background: #fff;
   color: #a7a7a7;
   font-family: "Merriweather", serif;
@@ -5837,7 +5838,77 @@ h2 {
     h2 {
       font-size: 3rem; } }
 
+nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 15%;
+  z-index: 10;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform ease-out 250ms;
+  transition: -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms;
+  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms; }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    height: 100vh;
+    background: #ca0022;
+    list-style: none; }
+    nav ul li {
+      text-align: center; }
+      nav ul li:not(:last-of-type) {
+        border-bottom: 1px solid #79242f; }
+      nav ul li:hover {
+        background: rgba(121, 36, 47, 0.3); }
+  nav a {
+    display: inline-block;
+    width: 100%;
+    padding: calc(100vh/8) 0;
+    font-size: 4rem;
+    letter-spacing: 0.15em;
+    color: #79242f;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: "Six Caps", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 0; }
+
+.close-icon {
+  display: none; }
+
+.nav-is-open {
+  height: 100vh;
+  overflow-y: hidden; }
+  .nav-is-open nav {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  .nav-is-open .hamburger {
+    display: none; }
+  .nav-is-open .close-icon {
+    display: block; }
+  .nav-is-open .menu-button {
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%); }
+  .nav-is-open .container-all {
+    -webkit-transform: translateX(85%);
+            transform: translateX(85%); }
+
 header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5855,6 +5926,12 @@ header {
   background-image: url("../images/backgrounds/header-bg.png");
   background-size: cover;
   background-position: center; }
+  header .menu-button {
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    background: transparent;
+    border: 0; }
   header .logo {
     margin: 2em 5em;
     max-height: 15em; }
@@ -6120,7 +6197,8 @@ textarea {
   font-size: 1.2rem; }
 
 textarea {
-  height: 10em; }
+  height: 10em;
+  resize: none; }
 
 .button {
   display: inline-block;

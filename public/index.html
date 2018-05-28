@@ -14,120 +14,154 @@
     <link rel="icon" href="images/icons/wizard.ico" type="image/x-icon"/>
 </head>
 <body>
-    <header>
-        <img class="logo" src="images/icons/logo.png" alt="My Logo Image">
-        <h1>Welcome to my <span>Portfolio</span></h1>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </nav>
 
-    <section class="intro">
-        <div class="intro-left">
-            <img src="images/backgrounds/intro-left.png" alt="a laptop on a wood table">
-        </div>
-        <div class="intro-middle">
-            <h2>Making it happen</h2>
-            <p>You have a really brilliant idea and it'll make people life easier or give them new opportunities they didn't have early? And you really need someone who can help you live out this idea on the Web?</p>
-            <p>I can help you and I'll be happy to do it. I believe that all the cool ideas should come true!</p>
-        </div>
-        <div class="intro-right">
-            <img src="images/backgrounds/intro-right.png" alt="two computers and a laptop on a table">
-        </div>
-    </section>
+    <div class="container-all">
+        <header id="home">
+            <button class="menu-button">
+                <svg class="hamburger" x="0px" y="0px"
+                  viewBox="0 0 30 17" height="17" width="30" >
+                    <g transform="translate(-15 -15)">
+                      <rect x="15" y="16" class="st0" width="30" height="2"/>
+                    </g>
+                    <g transform="translate(-15 -9)">
+                      <rect x="15" y="16" class="st0" width="30" height="2"/>
+                    </g>
+                    <g transform="translate(-15 -3)">
+                      <rect x="15" y="16" class="st0" width="30" height="2"/>
+                    </g>
+                </svg>
 
-    <section class="about-me">
-        <img class="about-image" src="images/content/lyudmyla-portfolio.png" alt="A picture of Lyudmyla Gulik">
-        <h1 class="about-title">Lyudmyla Portfolio</h1>
-        <h2 class="about-subtitle">designer & developer</h2>
-        <div class="about-text">
-            <p>I've been working in software development industry more than 18 years and I managed to implement a lot of amazing products, some of which I enjoy with pleasure.</p>
-            <p>I think that's because I like to dive into subject area and into an existing task as deep as possible and prepare clear requirements with its excellent future implementation.</p>
-            <p>My design approach is always clean, modern, and simple. All code meets current best practices.</p>
-            <p>The main goal for me: to understand the customer, to find the most effective solution in a short time and to implement it with excellent quality.</p>
-        </div>
-    </section>
+                <svg class="close-icon" x="0px" y="0px"
+                  viewBox="0 0 30 17" height="17" width="30">
+                   <g transform="translate(-15 -15)">
+                     <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                       35.8,16.5 37,17.7    "/>
+                   </g>
+               </svg> 
+            </button>
 
-    <section class="portfolio">
-        <h1>My Work</h1>
-            
-        <!-- Portfolio Items -->
-        <div class="portfolio-items">
-            <!-- Portfolio Item 1 -->
-            <figure class="portfolio-item">
-                <img src="images/content/003_nodejs_app_with_excel.png" alt="Portfolio Item Image">
-                <figcaption>
-                    <h2 class="portfolio-title">Project Name</h2>
-                    <p class="portfolio-description">A short description of the project</p>
-                    <a href="#" class="portfolio-link">More Info</a>
-                </figcaption>
-            </figure>
-            <!-- Portfolio Item 2 -->
-            <figure class="portfolio-item featured">
-                <img src="images/content/001_upcoming_game_events.png" alt="Portfolio Item Image">
-                <figcaption>
-                    <h2 class="portfolio-title">Project Name</h2>
-                    <p class="portfolio-description">A short description of the project</p>
-                    <a href="#" class="portfolio-link">More Info</a>
-                </figcaption>
-            </figure>
-            <!-- Portfolio Item 3 -->
-            <figure class="portfolio-item">
-                <img src="images/content/002_landing_page_markup.png" alt="Portfolio Item Image">
-                <figcaption>
-                    <h2 class="portfolio-title">Project Name</h2>
-                    <p class="portfolio-description">A short description of the project</p>
-                    <a href="#" class="portfolio-link">More Info</a>
-                </figcaption>
-            </figure>
-            <!-- Portfolio Item 4 -->
-            <figure class="portfolio-item">
-                <img src="images/content/002_page_404.png" alt="Portfolio Item Image">
-                <figcaption>
-                    <h2 class="portfolio-title">Project Name</h2>
-                    <p class="portfolio-description">A short description of the project</p>
-                    <a href="#" class="portfolio-link">More Info</a>
-                </figcaption>
-            </figure>
-            <!-- Portfolio Item 5 -->
-            <figure class="portfolio-item">
-                <img src="images/content/003_promo_site.png" alt="Portfolio Item Image">
-                <figcaption>
-                    <h2 class="portfolio-title">Project Name</h2>
-                    <p class="portfolio-description">A short description of the project</p>
-                    <a href="#" class="portfolio-link">More Info</a>
-                </figcaption>
-            </figure>
-        </div>
-    </section>
+            <img class="logo" src="images/icons/logo.png" alt="My Logo Image">
+            <h1>Welcome to my <span>Portfolio</span></h1>
+        </header>
 
-    <section class="contact">
-        <h1>Contact me</h1>
-        <form action="">
-            <label class="name">Name:
-                <input type="text" id="name">
-            </label>
-            
-            <label class="email">Email:
-                <input type="text" id="email">
-            </label>
+        <section class="intro">
+            <div class="intro-left">
+                <img src="images/backgrounds/intro-left.png" alt="a laptop on a wood table">
+            </div>
+            <div class="intro-middle">
+                <h2>Making it happen</h2>
+                <p>You have a really brilliant idea and it'll make people life easier or give them new opportunities they didn't have early? And you really need someone who can help you live out this idea on the Web?</p>
+                <p>I can help you and I'll be happy to do it. I believe that all the cool ideas should come true!</p>
+            </div>
+            <div class="intro-right">
+                <img src="images/backgrounds/intro-right.png" alt="two computers and a laptop on a table">
+            </div>
+        </section>
 
-            <label class="message">Message:
-                <textarea name="" id="message"></textarea>
-            </label>
+        <section class="about-me" id="about">
+            <img class="about-image" src="images/content/lyudmyla-portfolio.png" alt="A picture of Lyudmyla Gulik">
+            <h1 class="about-title">Lyudmyla Portfolio</h1>
+            <h2 class="about-subtitle">designer & developer</h2>
+            <div class="about-text">
+                <p>I've been working in software development industry more than 18 years and I managed to implement a lot of amazing products, some of which I enjoy with pleasure.</p>
+                <p>I think that's because I like to dive into subject area and into an existing task as deep as possible and prepare clear requirements with its excellent future implementation.</p>
+                <p>My design approach is always clean, modern, and simple. All code meets current best practices.</p>
+                <p>The main goal for me: to understand the customer, to find the most effective solution in a short time and to implement it with excellent quality.</p>
+            </div>
+        </section>
 
-            <input class="button" type="submit" value="SEND">
-        </form>    
-    </section>
-    
-    <footer>
-        <p>Follow me on social media</p>
+        <section class="portfolio" id="portfolio">
+            <h1>My Work</h1>
+                
+            <!-- Portfolio Items -->
+            <div class="portfolio-items">
+                <!-- Portfolio Item 1 -->
+                <figure class="portfolio-item">
+                    <img src="images/content/003_nodejs_app_with_excel.png" alt="Portfolio Item Image">
+                    <figcaption>
+                        <h2 class="portfolio-title">Project Name</h2>
+                        <p class="portfolio-description">A short description of the project</p>
+                        <a href="#" class="portfolio-link">More Info</a>
+                    </figcaption>
+                </figure>
+                <!-- Portfolio Item 2 -->
+                <figure class="portfolio-item featured">
+                    <img src="images/content/001_upcoming_game_events.png" alt="Portfolio Item Image">
+                    <figcaption>
+                        <h2 class="portfolio-title">Project Name</h2>
+                        <p class="portfolio-description">A short description of the project</p>
+                        <a href="#" class="portfolio-link">More Info</a>
+                    </figcaption>
+                </figure>
+                <!-- Portfolio Item 3 -->
+                <figure class="portfolio-item">
+                    <img src="images/content/002_landing_page_markup.png" alt="Portfolio Item Image">
+                    <figcaption>
+                        <h2 class="portfolio-title">Project Name</h2>
+                        <p class="portfolio-description">A short description of the project</p>
+                        <a href="#" class="portfolio-link">More Info</a>
+                    </figcaption>
+                </figure>
+                <!-- Portfolio Item 4 -->
+                <figure class="portfolio-item">
+                    <img src="images/content/002_page_404.png" alt="Portfolio Item Image">
+                    <figcaption>
+                        <h2 class="portfolio-title">Project Name</h2>
+                        <p class="portfolio-description">A short description of the project</p>
+                        <a href="#" class="portfolio-link">More Info</a>
+                    </figcaption>
+                </figure>
+                <!-- Portfolio Item 5 -->
+                <figure class="portfolio-item">
+                    <img src="images/content/003_promo_site.png" alt="Portfolio Item Image">
+                    <figcaption>
+                        <h2 class="portfolio-title">Project Name</h2>
+                        <p class="portfolio-description">A short description of the project</p>
+                        <a href="#" class="portfolio-link">More Info</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
-        <div class="social-icons">
-            <img class="social-icon" src="images/icons/linkedin.svg" alt="Twitter Icon">
-            <img class="social-icon" src="images/icons/github.svg" alt="Instargram Icon">
-            <img class="social-icon" src="images/icons/behance.svg" alt="Github Icon">
-        </div>
+        <section class="contact" id ="contact">
+            <h1>Contact me</h1>
+            <form action="">
+                <label class="name">Name:
+                    <input type="text" id="name">
+                </label>
+                
+                <label class="email">Email:
+                    <input type="text" id="email">
+                </label>
 
-        <p class="copyright">Copyright 2018 Lyudmyla Gulik</p>
-    </footer>
+                <label class="message">Message:
+                    <textarea name="" id="message"></textarea>
+                </label>
+
+                <input class="button" type="submit" value="SEND">
+            </form>    
+        </section>
+        
+        <footer>
+            <p>Follow me on social media</p>
+
+            <div class="social-icons">
+                <img class="social-icon" src="images/icons/linkedin.svg" alt="Twitter Icon">
+                <img class="social-icon" src="images/icons/github.svg" alt="Instargram Icon">
+                <img class="social-icon" src="images/icons/behance.svg" alt="Github Icon">
+            </div>
+
+            <p class="copyright">© Copyright 2018 Lyudmyla Gulik</p>
+        </footer>
+</div>
     <!-- Add all our scripts -->
     <script src="js/main.js"></script>
 </body>
