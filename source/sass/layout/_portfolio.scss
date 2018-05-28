@@ -6,14 +6,14 @@
 		font-weight: $fw-b;
 		text-align: center;
 	}
-}
+} // end of .portfolio
 
 .portfolio-items {
 	@include container($max-width: 75em);
 
 	display: flex;
 	flex-wrap: wrap;
-}
+} // end of .portfolio-items
 
 .portfolio-item {
 	flex: 1 1 10rem;
@@ -24,7 +24,7 @@
 	img {
 		display: block;
 		width: 100%;
-	}
+	} // end of img
 
 	figcaption {
 		position: absolute;
@@ -48,7 +48,7 @@
 
 			color: $white;
 			font-size: 2.5rem;
-		}
+		} // end of .portfolio-title
 
 		.portfolio-description {
 			display: none;
@@ -72,8 +72,8 @@
 
 				content: url('../images/icons/arrow-white.svg');
 			}
-		}
-	}
+		} // end of .portfolio-link
+	} // end of figcaption
 
 	&:hover,
 	&:focus {  //&:focus is just for mobile devices, where &:hover doesn't work
@@ -81,7 +81,130 @@
 			top: 0;
 		}
 	}
-}
+} // end of .portfolio-item
+
+.portfolio-modal {
+	display: none;
+		
+	position: fixed;
+	overflow-y: scroll;
+	overflow-x: hidden; // if some image is more then our width
+	top: 2em;
+	left: 2em;
+	right: 2em;
+	bottom: 2em;
+
+	z-index: 10;
+
+	background: $white;
+	box-shadow: 0 0 0 3em rgba(black, .5);
+
+	&.is-open {
+		display: block;
+	} 
+
+	.modal-close {
+		position: fixed;
+		width: 3em;
+		height: 3em;
+		left: 1em;
+		top: 1em;
+		padding: 4px 0 0;
+
+		background: $white;
+		border: 0;
+		border-radius: 50%;
+		box-shadow: 0 0 5px rgba(black, .5);
+	
+		cursor: pointer;
+	}
+
+	.portfolio-header {
+		padding: 5em 0;
+		margin-bottom: 2em;
+
+		background-size: cover;
+		background-position: center;
+
+		text-align: left;
+
+		&:nth-of-type(1) {
+			background-image: url('../images/content/003_nodejs_app_with_excel.png');
+		} 
+		&:nth-of-type(2) {
+			background-image: url('../images/content/001_upcoming_game_events.png');
+		} 
+		&:nth-of-type(3) {
+			background-image: url('../images/content/002_landing_page_markup.png');
+		} 
+		&:nth-of-type(4) {
+			background-image: url('../images/content/002_page_404.png');
+		} 
+		&:nth-of-type(5) {
+			background-image: url('../images/content/003_promo_site.png');
+		} 
+		
+		.portfolio-title-box {
+			width: 70%;
+			padding: 3em 0 3em 3em; 
+
+			background: rgba($accent, .75);
+			color: $white;
+
+			.portfolio-title {
+				display: inline-block;
+
+				font-size: 4rem;
+				color: $white;
+
+				&::after {
+					display: block;
+					height: 1px;
+					width: 100%;
+					margin: .5em 0;
+
+					content: '';
+					background: $white;
+				}
+			} // end of .portfolio-title
+
+			.portfolio-subtitle {
+				font-size: 1rem;
+			} // end of .portfolio-subtitle
+		} // end of .portfolio-title-box
+	} // end of .portfolio-header
+
+	.portfolio-content {
+		width: 85%;
+		margin: 0 auto;
+		padding-bottom: 2em;
+
+		text-align: left;
+
+		.portfolio-full-width {
+			width: 100vw;
+			height: 20vh;
+			object-fit: cover;
+			max-width: initial;
+			margin: 2em calc(50% - 50vw); // move our image outside .portfolio-content
+																		// to fit all .portfolio-modal width
+		} // end of .portfolio-full-width
+
+		@include mq {
+			.portfolio-pull-left {
+				width: 65%;
+				float: left;
+				margin-right: 2em;
+			}
+
+			.portfolio-pull-right {
+				width: 65%;
+				float: right;
+				margin-left: 2em;
+			}
+		}
+	} // end of .portfolio-content 
+} // end of .portfolio-modal
 
 // if our browser supports grid layout we're going to use it
 // instead of flex layout
@@ -94,22 +217,32 @@
 		@include mq {
 			grid-template-columns: repeat(4, 1fr);
 		}
-	}
+	} // end of .portfolio-items
 
-.featured {
-	figcaption {
-		.portfolio-title {
-			font-size: 5rem;
-		}
+	.featured {
+		figcaption {
+			.portfolio-title {
+				font-size: 5rem;
+			}
 
-		.portfolio-description {
-			display: block;
+			.portfolio-description {
+				display: block;
+			}
 		}
-	}
-}
+	} // end of .featured
 
 	.portfolio-item.featured	{
 		grid-column: 1 / span 2;
 		grid-row: 1 / span 2;
 	}
+} // end of @supports (display: grid)
+
+@keyframes modalIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes modalOut {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
 }

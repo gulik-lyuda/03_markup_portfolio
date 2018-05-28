@@ -21,7 +21,7 @@
             <li><a href="#portfolio">portfolio</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
-    </nav>
+    </nav> 
 
     <div class="container-all">
         <header id="home">
@@ -46,25 +46,27 @@
                        35.8,16.5 37,17.7    "/>
                    </g>
                </svg> 
-            </button>
+            </button> <!-- end of .menu-button -->
 
             <img class="logo" src="images/icons/logo.png" alt="My Logo Image">
             <h1>Welcome to my <span>Portfolio</span></h1>
-        </header>
+        </header>  <!-- end of #home -->
 
         <section class="intro">
             <div class="intro-left">
                 <img src="images/backgrounds/intro-left.png" alt="a laptop on a wood table">
             </div>
+
             <div class="intro-middle">
                 <h2>Making it happen</h2>
                 <p>You have a really brilliant idea and it'll make people life easier or give them new opportunities they didn't have early? And you really need someone who can help you live out this idea on the Web?</p>
                 <p>I can help you and I'll be happy to do it. I believe that all the cool ideas should come true!</p>
             </div>
+
             <div class="intro-right">
                 <img src="images/backgrounds/intro-right.png" alt="two computers and a laptop on a table">
             </div>
-        </section>
+        </section> <!-- end of .intro -->
 
         <section class="about-me" id="about">
             <img class="about-image" src="images/content/lyudmyla-portfolio.png" alt="A picture of Lyudmyla Gulik">
@@ -76,7 +78,7 @@
                 <p>My design approach is always clean, modern, and simple. All code meets current best practices.</p>
                 <p>The main goal for me: to understand the customer, to find the most effective solution in a short time and to implement it with excellent quality.</p>
             </div>
-        </section>
+        </section> <!-- end of .about-me -->
 
         <section class="portfolio" id="portfolio">
             <h1>My Work</h1>
@@ -86,50 +88,215 @@
                 <!-- Portfolio Item 1 -->
                 <figure class="portfolio-item">
                     <img src="images/content/003_nodejs_app_with_excel.png" alt="Portfolio Item Image">
+                    
                     <figcaption>
                         <h2 class="portfolio-title">Project Name</h2>
-                        <p class="portfolio-description">A short description of the project</p>
+                        <p class="portfolio-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
                         <a href="#" class="portfolio-link">More Info</a>
                     </figcaption>
-                </figure>
+                    
+                    <!-- Portfolio Modal 1 -->
+                    <div class="portfolio-modal">
+                        <button class="modal-close">
+                            <svg x="0px" y="0px"
+                              viewBox="0 0 30 17" height="17" width="30">
+                               <g transform="translate(-15 -15)">
+                                 <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                   35.8,16.5 37,17.7    "/>
+                               </g>
+                           </svg> 
+                        </button>
+
+                        <div class="portfolio-header">
+                            <div class="portfolio-title-box">
+                                <h2 class="portfolio-title">Project Name</h2>
+                                <p class="portfolio-subtitle">Subtitle goes here ...</p>
+                            </div>
+                        </div> <!-- end of .portfolio-header -->
+
+                        <div class="portfolio-content">
+                            <p class="portfolio-description">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
+                            <img class="portfolio-full-width" src="images/content/003_nodejs_app_with_excel.png" alt="POrtfolio Item Image">
+
+                            <p class="portfolio-description">Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. </p>
+                            <img class="portfolio-pull-left" src="images/content/003_nodejs_app_with_excel.png" alt="POrtfolio Item Image">
+
+                            <p class="portfolio-description">Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. </p>
+                            <img class="portfolio-pull-right" src="images/content/003_nodejs_app_with_excel.png" alt="POrtfolio Item Image">
+                        </div> <!-- end of .portfolio-content -->                       
+                    </div> <!-- end of Portfolio Modal 1 -->
+                </figure> <!-- end of Portfolio Item 1 -->
+
                 <!-- Portfolio Item 2 -->
                 <figure class="portfolio-item featured">
                     <img src="images/content/001_upcoming_game_events.png" alt="Portfolio Item Image">
+                    
                     <figcaption>
                         <h2 class="portfolio-title">Project Name</h2>
                         <p class="portfolio-description">A short description of the project</p>
                         <a href="#" class="portfolio-link">More Info</a>
                     </figcaption>
-                </figure>
+
+                    <!-- Portfolio Modal 2 -->
+                    <div class="portfolio-modal">
+                        <button class="modal-close">
+                            <svg x="0px" y="0px"
+                              viewBox="0 0 30 17" height="17" width="30">
+                               <g transform="translate(-15 -15)">
+                                 <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                   35.8,16.5 37,17.7    "/>
+                               </g>
+                           </svg> 
+                        </button>
+
+                        <div class="portfolio-header">
+                            <div class="portfolio-title-box">
+                                <h2 class="portfolio-title">Project Name</h2>
+                                <p class="portfolio-subtitle">Subtitle goes here ...</p>
+                            </div>
+                        </div> <!-- end of .portfolio-header -->
+
+                        <div class="portfolio-content">
+                            <p class="portfolio-description">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
+                            <img class="portfolio-full-width" src="images/content/001_upcoming_game_events.png" alt="POrtfolio Item Image">
+
+                            <p class="portfolio-description">Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. </p>
+                            <img class="portfolio-pull-left" src="images/content/001_upcoming_game_events.png" alt="POrtfolio Item Image">
+
+                            <p class="portfolio-description">Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. </p>
+                            <img class="portfolio-pull-right" src="images/content/001_upcoming_game_events.png" alt="POrtfolio Item Image">
+                        </div> <!-- end of .portfolio-content -->                       
+                    </div> <!-- end of Portfolio Modal 2  -->
+                </figure> <!-- end of Portfolio Item 2 -->
+
                 <!-- Portfolio Item 3 -->
                 <figure class="portfolio-item">
                     <img src="images/content/002_landing_page_markup.png" alt="Portfolio Item Image">
+                    
                     <figcaption>
                         <h2 class="portfolio-title">Project Name</h2>
                         <p class="portfolio-description">A short description of the project</p>
                         <a href="#" class="portfolio-link">More Info</a>
                     </figcaption>
-                </figure>
+
+                    <!-- Portfolio Modal 3 -->
+                    <div class="portfolio-modal">
+                        <button class="modal-close">
+                            <svg x="0px" y="0px"
+                              viewBox="0 0 30 17" height="17" width="30">
+                               <g transform="translate(-15 -15)">
+                                 <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                   35.8,16.5 37,17.7    "/>
+                               </g>
+                           </svg> 
+                        </button>
+
+                        <div class="portfolio-header">
+                            <div class="portfolio-title-box">
+                                <h2 class="portfolio-title">Project Name</h2>
+                                <p class="portfolio-subtitle">Subtitle goes here ...</p>
+                            </div>
+                        </div> <!-- end of .portfolio-header -->
+
+                        <div class="portfolio-content">
+                            <p class="portfolio-description">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
+                            <img class="portfolio-full-width" src="images/content/002_landing_page_markup.png" alt="POrtfolio Item Image">
+
+                            <p class="portfolio-description">Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. </p>
+                            <img class="portfolio-pull-left" src="images/content/002_landing_page_markup.png" alt="POrtfolio Item Image">
+
+                            <p class="portfolio-description">Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. </p>
+                            <img class="portfolio-pull-right" src="images/content/002_landing_page_markup.png" alt="POrtfolio Item Image">
+                        </div> <!-- end of .portfolio-content -->                       
+                    </div> <!-- end of Portfolio Modal 3 -->
+                </figure> <!-- end of Portfolio Item 3 -->
+
                 <!-- Portfolio Item 4 -->
                 <figure class="portfolio-item">
                     <img src="images/content/002_page_404.png" alt="Portfolio Item Image">
+                    
                     <figcaption>
                         <h2 class="portfolio-title">Project Name</h2>
                         <p class="portfolio-description">A short description of the project</p>
                         <a href="#" class="portfolio-link">More Info</a>
                     </figcaption>
-                </figure>
+
+                    <!-- Portfolio Modal 4 -->
+                    <div class="portfolio-modal">
+                        <button class="modal-close">
+                            <svg x="0px" y="0px"
+                              viewBox="0 0 30 17" height="17" width="30">
+                               <g transform="translate(-15 -15)">
+                                 <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                   35.8,16.5 37,17.7    "/>
+                               </g>
+                           </svg> 
+                        </button>
+
+                        <div class="portfolio-header">
+                            <div class="portfolio-title-box">
+                                <h2 class="portfolio-title">Project Name</h2>
+                                <p class="portfolio-subtitle">Subtitle goes here ...</p>
+                            </div>
+                        </div> <!-- end of .portfolio-header -->
+
+                        <div class="portfolio-content">
+                            <p class="portfolio-description">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
+                            <img class="portfolio-full-width" src="images/content/002_page_404.png" alt="POrtfolio Item Image">
+
+                            <p class="portfolio-description">Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. </p>
+                            <img class="portfolio-pull-left" src="images/content/002_page_404.png" alt="POrtfolio Item Image">
+
+                            <p class="portfolio-description">Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. </p>
+                            <img class="portfolio-pull-right" src="images/content/002_page_404.pngg" alt="POrtfolio Item Image">
+                        </div> <!-- end of .portfolio-content -->                       
+                    </div> <!-- end of Portfolio Modal 4 -->
+                </figure> <!-- end of Portfolio Item 4 -->
+
+
                 <!-- Portfolio Item 5 -->
                 <figure class="portfolio-item">
                     <img src="images/content/003_promo_site.png" alt="Portfolio Item Image">
+                    
                     <figcaption>
                         <h2 class="portfolio-title">Project Name</h2>
                         <p class="portfolio-description">A short description of the project</p>
                         <a href="#" class="portfolio-link">More Info</a>
                     </figcaption>
-                </figure>
+
+                    <!-- Portfolio Modal 5 -->
+                    <div class="portfolio-modal">
+                        <button class="modal-close">
+                            <svg x="0px" y="0px"
+                              viewBox="0 0 30 17" height="17" width="30">
+                               <g transform="translate(-15 -15)">
+                                 <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+                                   35.8,16.5 37,17.7    "/>
+                               </g>
+                           </svg> 
+                        </button>
+
+                        <div class="portfolio-header">
+                            <div class="portfolio-title-box">
+                                <h2 class="portfolio-title">Project Name</h2>
+                                <p class="portfolio-subtitle">Subtitle goes here ...</p>
+                            </div>
+                        </div> <!-- end of .portfolio-header -->
+
+                        <div class="portfolio-content">
+                            <p class="portfolio-description">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
+                            <img class="portfolio-full-width" src="images/content/003_promo_site.png" alt="POrtfolio Item Image">
+
+                            <p class="portfolio-description">Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. </p>
+                            <img class="portfolio-pull-left" src="images/content/003_promo_site.png" alt="POrtfolio Item Image">
+
+                            <p class="portfolio-description">Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. </p>
+                            <img class="portfolio-pull-right" src="images/content/003_promo_site.png" alt="POrtfolio Item Image">
+                        </div> <!-- end of .portfolio-content -->                       
+                    </div> <!-- end of Portfolio Modal 5 -->
+                </figure> <!-- end of Portfolio Item 5 -->
             </div>
-        </section>
+        </section> <!-- end of .portfolio -->
 
         <section class="contact" id ="contact">
             <h1>Contact me</h1>
@@ -148,7 +315,7 @@
 
                 <input class="button" type="submit" value="SEND">
             </form>    
-        </section>
+        </section> <!-- end of .contact -->
         
         <footer>
             <p>Follow me on social media</p>
@@ -161,7 +328,8 @@
 
             <p class="copyright">© Copyright 2018 Lyudmyla Gulik</p>
         </footer>
-</div>
+    </div> <!-- end of .container-all -->
+
     <!-- Add all our scripts -->
     <script src="js/main.js"></script>
 </body>

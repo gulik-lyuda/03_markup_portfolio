@@ -16,7 +16,7 @@ footer {
 			width: 25%;
 			height: 25%;
 		}
-	}
+	} // end of .social-icons
 
 	.copyright {
 		&::before {
@@ -28,5 +28,5 @@ footer {
 
 			background: rgba($white, .15);
 		}
-	}
-}
+	} // end of .copyright
+}  // end of footer

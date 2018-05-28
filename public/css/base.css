@@ -6130,6 +6130,90 @@ header {
   .portfolio-item:hover figcaption, .portfolio-item:focus figcaption {
     top: 0; }
 
+.portfolio-modal {
+  display: none;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 2em;
+  left: 2em;
+  right: 2em;
+  bottom: 2em;
+  z-index: 10;
+  background: #fff;
+  -webkit-box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.5); }
+  .portfolio-modal.is-open {
+    display: block; }
+  .portfolio-modal .modal-close {
+    position: fixed;
+    width: 3em;
+    height: 3em;
+    left: 1em;
+    top: 1em;
+    padding: 4px 0 0;
+    background: #fff;
+    border: 0;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+  .portfolio-modal .portfolio-header {
+    padding: 5em 0;
+    margin-bottom: 2em;
+    background-size: cover;
+    background-position: center;
+    text-align: left; }
+    .portfolio-modal .portfolio-header:nth-of-type(1) {
+      background-image: url("../images/content/003_nodejs_app_with_excel.png"); }
+    .portfolio-modal .portfolio-header:nth-of-type(2) {
+      background-image: url("../images/content/001_upcoming_game_events.png"); }
+    .portfolio-modal .portfolio-header:nth-of-type(3) {
+      background-image: url("../images/content/002_landing_page_markup.png"); }
+    .portfolio-modal .portfolio-header:nth-of-type(4) {
+      background-image: url("../images/content/002_page_404.png"); }
+    .portfolio-modal .portfolio-header:nth-of-type(5) {
+      background-image: url("../images/content/003_promo_site.png"); }
+    .portfolio-modal .portfolio-header .portfolio-title-box {
+      width: 70%;
+      padding: 3em 0 3em 3em;
+      background: rgba(202, 0, 34, 0.75);
+      color: #fff; }
+      .portfolio-modal .portfolio-header .portfolio-title-box .portfolio-title {
+        display: inline-block;
+        font-size: 4rem;
+        color: #fff; }
+        .portfolio-modal .portfolio-header .portfolio-title-box .portfolio-title::after {
+          display: block;
+          height: 1px;
+          width: 100%;
+          margin: .5em 0;
+          content: '';
+          background: #fff; }
+      .portfolio-modal .portfolio-header .portfolio-title-box .portfolio-subtitle {
+        font-size: 1rem; }
+  .portfolio-modal .portfolio-content {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    text-align: left; }
+    .portfolio-modal .portfolio-content .portfolio-full-width {
+      width: 100vw;
+      height: 20vh;
+      -o-object-fit: cover;
+         object-fit: cover;
+      max-width: initial;
+      margin: 2em calc(50% - 50vw); }
+    @media (min-width: 50em) {
+      .portfolio-modal .portfolio-content .portfolio-pull-left {
+        width: 65%;
+        float: left;
+        margin-right: 2em; }
+      .portfolio-modal .portfolio-content .portfolio-pull-right {
+        width: 65%;
+        float: right;
+        margin-left: 2em; } }
+
 @supports (display: grid) {
   .portfolio-items {
     display: grid;
@@ -6145,6 +6229,30 @@ header {
   .portfolio-item.featured {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2; } }
+
+@-webkit-keyframes modalIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes modalIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes modalOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes modalOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .contact {
   width: 90%;

@@ -17,7 +17,7 @@ header {
 
 		background: transparent;
 		border: 0;
-	}
+	} // end of .menu-button
 
 	.logo {
 		margin: 2em 5em;
@@ -43,7 +43,7 @@ header {
 			@include mq {
 				font-size: 7vw;
 			}
-		}
+		} // end of span
 
 		&::before, &::after {
 			display: block;
@@ -52,7 +52,7 @@ header {
 			width: 30%;
 			height: 1px;
 			background: $dark-accent;
-		}
+		} 
 
 		&::before {
 			margin: 0 auto 2em;
@@ -61,5 +61,5 @@ header {
 		&::after {
 			margin: 2em auto 0;
 		}
-	}
-}
+	} // end of h1
+} // end of header

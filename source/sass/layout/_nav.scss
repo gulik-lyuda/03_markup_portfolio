@@ -31,8 +31,8 @@ nav {
 			&:hover {
 				background: rgba($dark-accent, .3);
 			}
-		}
-	}
+		} // end of li
+	} // end of ul
 
 	a {
 		display: inline-block;
@@ -42,8 +42,8 @@ nav {
 		@include sans-serif($fs: 4rem, $color: $dark-accent);
 		text-decoration: none;
 		line-height: 0;
-	}
-}
+	} // end of a
+} // end of nav
 
 .close-icon {
 	display: none; 
@@ -73,4 +73,4 @@ nav {
 	.container-all {
 		transform: translateX(85%);
 	}
-}
+} // end of .nav-is-open

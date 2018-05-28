@@ -7,7 +7,7 @@
 		font-weight: $fw-b;
 		text-align: center;
 	}
-}
+} // end of .contact
 
 form {
 	display: flex;
@@ -39,18 +39,16 @@ form {
 			.button {
 				grid-area: button;
 			}
-		}
-
-		
+		}		
 	}
-}
+} // end of form
 
 label {
 	display: block;
 	margin-top: 1em;
 
 	color: $dark-grey;
-}
+} // end of label
 
 input,
 textarea {
@@ -64,12 +62,12 @@ textarea {
 	border: 1px solid $light-grey;
 
 	font-size: 1.2rem;
-}
+} // end of input, textarea
 
 textarea {
 	height: 10em;
 	resize: none;
-}
+} // end of textarea
 
 .button {
 	display: inline-block;
@@ -83,4 +81,4 @@ textarea {
 	border: none;
 	color: $white; 
 	@include sans-serif($fs: 2rem, $color: $white);
-}
+} // end of .button
