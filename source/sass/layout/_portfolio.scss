@@ -123,56 +123,42 @@
 		padding: 5em 0;
 		margin-bottom: 2em;
 
+		background-image: url('../images/backgrounds/header-bg.png');
 		background-size: cover;
 		background-position: center;
 
 		text-align: left;
-
-		&:nth-of-type(1) {
-			background-image: url('../images/content/003_nodejs_app_with_excel.png');
-		} 
-		&:nth-of-type(2) {
-			background-image: url('../images/content/001_upcoming_game_events.png');
-		} 
-		&:nth-of-type(3) {
-			background-image: url('../images/content/002_landing_page_markup.png');
-		} 
-		&:nth-of-type(4) {
-			background-image: url('../images/content/002_page_404.png');
-		} 
-		&:nth-of-type(5) {
-			background-image: url('../images/content/003_promo_site.png');
-		} 
 		
 		.portfolio-title-box {
 			width: 70%;
-			padding: 3em 0 3em 3em; 
+			padding: 3em; 
 
 			background: rgba($accent, .75);
 			color: $white;
-
-			.portfolio-title {
-				display: inline-block;
-
-				font-size: 4rem;
-				color: $white;
-
-				&::after {
-					display: block;
-					height: 1px;
-					width: 100%;
-					margin: .5em 0;
-
-					content: '';
-					background: $white;
-				}
-			} // end of .portfolio-title
-
-			.portfolio-subtitle {
-				font-size: 1rem;
-			} // end of .portfolio-subtitle
 		} // end of .portfolio-title-box
 	} // end of .portfolio-header
+
+	.portfolio-title {
+			display: inline-block;
+
+			font-size: 4rem;
+			color: $white;
+
+			&::after {
+				display: block;
+				height: 1px;
+				width: 100%;
+				margin: .5em 0;
+
+				content: '';
+				background: $white;
+			}
+		} // end of .portfolio-title
+
+		.portfolio-subtitle {
+			font-size: 1.25rem;
+			font-weight: $fw-b;
+		} // end of .portfolio-subtitle
 
 	.portfolio-content {
 		width: 85%;
@@ -180,6 +166,20 @@
 		padding-bottom: 2em;
 
 		text-align: left;
+
+		.general-info {
+			width: 50%;
+		}
+
+		.description-part {
+			display: flex-inline;
+			flex-direction: row;
+			padding: 2em 0;
+
+			img {
+				width: 30%;
+			}
+		} // end of .description-part
 
 		.portfolio-full-width {
 			width: 100vw;

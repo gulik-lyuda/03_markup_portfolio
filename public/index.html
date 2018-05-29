@@ -86,12 +86,17 @@
             <!-- Portfolio Items -->
             <div class="portfolio-items">
                 <!-- Portfolio Item 1 -->
-                <figure class="portfolio-item">
+                <figure class="portfolio-item featured">
                     <img src="images/content/003_nodejs_app_with_excel.png" alt="Portfolio Item Image">
                     
                     <figcaption>
-                        <h2 class="portfolio-title">Project Name</h2>
-                        <p class="portfolio-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+                        <h2 class="portfolio-title">Node.js App with current state of the gym & pool </h2>
+                        <p class="portfolio-description">
+                            The task was to display the current status of the pool and the gym based on the data of the schedule of their work and holidays from the xlsx-file.
+                        </p>
+                        <p class="portfolio-description">
+                            The data should have been displayed taking into account the time zone of the pool/gym.
+                        </p>
                         <a href="#" class="portfolio-link">More Info</a>
                     </figcaption>
                     
@@ -109,26 +114,64 @@
 
                         <div class="portfolio-header">
                             <div class="portfolio-title-box">
-                                <h2 class="portfolio-title">Project Name</h2>
-                                <p class="portfolio-subtitle">Subtitle goes here ...</p>
+                                <h2 class="portfolio-title">Node.js App with current state of the gym & pool </h2>
+                                <p class="portfolio-description">
+                                    The task was to display the current status of the pool and the gym based on the data of the schedule of their work and holidays from the xlsx-file.
+                                </p>
+                                <p class="portfolio-description">
+                                    The data should have been displayed taking into account the time zone of the pool/gym.
+                                </p>
                             </div>
                         </div> <!-- end of .portfolio-header -->
 
                         <div class="portfolio-content">
-                            <p class="portfolio-description">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. </p>
-                            <img class="portfolio-full-width" src="images/content/003_nodejs_app_with_excel.png" alt="POrtfolio Item Image">
+                            <div class="general-info">
+                                <p class="portfolio-subtitle">Decision:</p>
+                                <p class="portfolio-description">I've built a Node.js application using several additional libraries:</p>
+                                <p class="portfolio-description">1. To import data from the xlsx file, the library xlsx.js was used.</p>
+                                <p class="portfolio-description">2. For the further analysis of data and their processing, the libraries moment.js and moment-timezone.js were used.</p>
+                                <p class="portfolio-description">In addition, the markup of the page was adapted for mobile devices.</p>
+                            </div>
 
-                            <p class="portfolio-description">Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. </p>
-                            <img class="portfolio-pull-left" src="images/content/003_nodejs_app_with_excel.png" alt="POrtfolio Item Image">
+                            <div class="description-part">
+                                <img class="portfolio-pull-left" src="images/content/gym_closed.png" alt="Gym Closed Image">
+                                <img class="portfolio-pull-left" src="images/content/gym_open.png" alt="Gym Open Image">
+                                <div class="description">
+                                    <p class="portfolio-subtitle">Gym working hours logic:</p>
+                                    <p class="portfolio-description">Working hours are defined on the values of the sheets “GYM ALL YEAR” and “GYM Holidays”.</p>
+                                    <p class="portfolio-description">The sequence of actions for defining the message text is as follows</p>
+                                </div>
+                            </div>                            
+                            
+                            <div class="description-part">
+                                <img class="portfolio-pull-right" src="images/content/pool_closed.png" alt="Pool Closed Image">
+                                <img class="portfolio-pull-right" src="images/content/pool_open.png" alt="Pool Open Image">
+                                <div class="description">
+                                    <p class="portfolio-subtitle">Pool working hours logic:</p>
+                                    <p class="portfolio-description">Pool is all year long closed, but open only in season.</p>
+                                    <p class="portfolio-description">Working hours for season’s days are defined on the sheet “Pool”</p>
+                                </div>
+                            </div>      
 
-                            <p class="portfolio-description">Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. </p>
-                            <img class="portfolio-pull-right" src="images/content/003_nodejs_app_with_excel.png" alt="POrtfolio Item Image">
+                            <div class="description-part">
+                                <p class="portfolio-subtitle">Client's feedback:</p>
+                                <p class="portfolio-description">
+                                    "Lyudmyla delivered a project with Node.js skills I enjoyed working with her. 
+                                    She gave a lot of thought before even she start, She is a quick learner and very sharp regards to understanding the project basics. 
+                                    Definitely, I would love to work with her again!"
+                                </p> 
+                            </div>   
+
+                            <div class="description-part">
+                                <p class="portfolio-subtitle">More details on github:</p>
+                                <a href="https://github.com/gulik-lyuda/15_nodejs_app_with_xlsx" class="portfolio-link">https://github.com/gulik-lyuda/15_nodejs_app_with_xlsx</a>
+                            </div>                      
                         </div> <!-- end of .portfolio-content -->                       
                     </div> <!-- end of Portfolio Modal 1 -->
                 </figure> <!-- end of Portfolio Item 1 -->
 
                 <!-- Portfolio Item 2 -->
-                <figure class="portfolio-item featured">
+                <figure class="portfolio-item">
                     <img src="images/content/001_upcoming_game_events.png" alt="Portfolio Item Image">
                     
                     <figcaption>
@@ -248,7 +291,7 @@
                             <img class="portfolio-pull-left" src="images/content/002_page_404.png" alt="POrtfolio Item Image">
 
                             <p class="portfolio-description">Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. </p>
-                            <img class="portfolio-pull-right" src="images/content/002_page_404.pngg" alt="POrtfolio Item Image">
+                            <img class="portfolio-pull-right" src="images/content/002_page_404.png" alt="POrtfolio Item Image">
                         </div> <!-- end of .portfolio-content -->                       
                     </div> <!-- end of Portfolio Modal 4 -->
                 </figure> <!-- end of Portfolio Item 4 -->
