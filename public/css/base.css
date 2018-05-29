@@ -6216,7 +6216,11 @@ header {
       .portfolio-modal .portfolio-content .portfolio-pull-right {
         width: 65%;
         float: right;
-        margin-left: 2em; } }
+        margin-left: 2em; }
+      .portfolio-modal .portfolio-content .portfolio-pull-center {
+        width: 100%;
+        float: left;
+        margin-bottom: 2em; } }
 
 @supports (display: grid) {
   .portfolio-items {
