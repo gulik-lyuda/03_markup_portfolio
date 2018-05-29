@@ -6203,7 +6203,7 @@ header {
         width: 30%; }
     .portfolio-modal .portfolio-content .portfolio-full-width {
       width: 100vw;
-      height: 20vh;
+      height: 90vh;
       -o-object-fit: cover;
          object-fit: cover;
       max-width: initial;
