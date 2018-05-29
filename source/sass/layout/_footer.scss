@@ -13,8 +13,26 @@ footer {
 		margin: 1.75em auto 4em;
 
 		.social-icon {
-			width: 25%;
-			height: 25%;
+			width: 3.75em;
+			height: 3.75em;
+		}
+
+		.linkedin {
+			background: url('../images/icons/linkedin.svg');
+			background-size: cover;
+			background-position: center;
+		}
+
+		.github {
+			background: url('../images/icons/github.svg');
+			background-size: cover;
+			background-position: center;
+		}
+
+		.behance {
+			background: url('../images/icons/behance.svg');
+			background-size: cover;
+			background-position: center;
 		}
 	} // end of .social-icons
 

@@ -6350,8 +6350,20 @@ footer {
             justify-content: space-between;
     margin: 1.75em auto 4em; }
     footer .social-icons .social-icon {
-      width: 25%;
-      height: 25%; }
+      width: 3.75em;
+      height: 3.75em; }
+    footer .social-icons .linkedin {
+      background: url("../images/icons/linkedin.svg");
+      background-size: cover;
+      background-position: center; }
+    footer .social-icons .github {
+      background: url("../images/icons/github.svg");
+      background-size: cover;
+      background-position: center; }
+    footer .social-icons .behance {
+      background: url("../images/icons/behance.svg");
+      background-size: cover;
+      background-position: center; }
   footer .copyright::before {
     display: block;
     content: '';
