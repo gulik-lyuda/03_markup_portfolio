@@ -1,7 +1,7 @@
 // 
 // Work with navigation menu
 // 
-const navToggle = document.querySelector('.menu-button');
+const navToggle = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 const containerAll = document.querySelector('.container-all');
 
@@ -9,12 +9,14 @@ const containerAll = document.querySelector('.container-all');
 navToggle.addEventListener('click', _ => {
 	containerAll.style.transition = 'transform ease-out 250ms';  //just fix some bug for mobile devices with incorrect transition
 	document.body.classList.toggle('nav-is-open');
+	navToggle.classList.toggle('is-active');
 })
 
 //hide our nav menu if user click some menu item
 nav.addEventListener('click', _ => {
 	containerAll.style.transition = '0ms';  //just fix some bug for mobile devices with incorrect transition
 	document.body.classList.remove('nav-is-open');
+	navToggle.classList.remove('is-active');
 })
 
 // 

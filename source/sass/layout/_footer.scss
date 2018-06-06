@@ -18,21 +18,18 @@ footer {
 		}
 
 		.linkedin {
-			background: url('../images/icons/linkedin.svg');
+			background: url('../images/icons/linkedin.svg') no-repeat center;
 			background-size: cover;
-			background-position: center;
 		}
 
 		.github {
-			background: url('../images/icons/github.svg');
+			background: url('../images/icons/github.svg') no-repeat center;
 			background-size: cover;
-			background-position: center;
 		}
 
 		.behance {
-			background: url('../images/icons/behance.svg');
+			background: url('../images/icons/behance.svg') no-repeat center;
 			background-size: cover;
-			background-position: center;
 		}
 	} // end of .social-icons
 

@@ -16,6 +16,7 @@ nav {
 		align-items: stretch;
 
 		height: 100vh;
+		padding: 0;
 
 		background: $accent;
 
@@ -45,10 +46,6 @@ nav {
 	} // end of a
 } // end of nav
 
-.close-icon {
-	display: none; 
-}
-
 .nav-is-open {
 	//don't scroll undelying content vertically
 	height: 100vh;
@@ -59,15 +56,7 @@ nav {
 	}
 
 	.hamburger {
-		display: none;
-	}
-
-	.close-icon {
-		display: block;
-	}
-
-	.menu-button {
-		transform: translateX(-70%);
+		transform: translateX(-50%);
 	}
 
 	.container-all {

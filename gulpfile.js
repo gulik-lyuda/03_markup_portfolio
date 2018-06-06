@@ -76,7 +76,7 @@
             .pipe(gulp.dest(paths.dest.html))
 						.pipe(reload({stream:true}));
     });
-
+	
 		//compile sass into css & auto-inject into browsers
     gulp.task('cssCreate', function() {
         gulp.src(paths.src.css)

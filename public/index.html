@@ -8,7 +8,9 @@
     <title>Gulik Lyudmyla's Portfolio</title>
 
     <!-- Connect our stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/vendors/hamburgers.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <!-- Add favicon -->
     <link rel="icon" href="images/icons/wizard.ico" type="image/x-icon"/>
@@ -24,28 +26,11 @@
     </nav> 
 
     <div class="container-all">
-        <header id="home">
-            <button class="menu-button">
-                <svg class="hamburger" x="0px" y="0px"
-                  viewBox="0 0 30 17" height="17" width="30" >
-                    <g transform="translate(-15 -15)">
-                      <rect x="15" y="16" class="st0" width="30" height="2"/>
-                    </g>
-                    <g transform="translate(-15 -9)">
-                      <rect x="15" y="16" class="st0" width="30" height="2"/>
-                    </g>
-                    <g transform="translate(-15 -3)">
-                      <rect x="15" y="16" class="st0" width="30" height="2"/>
-                    </g>
-                </svg>
-
-                <svg class="close-icon" x="0px" y="0px"
-                  viewBox="0 0 30 17" height="17" width="30">
-                   <g transform="translate(-15 -15)">
-                     <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                       35.8,16.5 37,17.7    "/>
-                   </g>
-               </svg> 
+        <header class="general-header" id="home">
+            <button class="hamburger hamburger--arrow">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
             </button> <!-- end of .menu-button -->
 
             <img class="logo" src="images/icons/logo.png" alt="My Logo Image">
@@ -90,7 +75,7 @@
                     <img src="images/content/thumbnails/003_nodejs_app_with_excel.png" alt="Portfolio Item Image">
                     
                     <figcaption>
-                        <h2 class="portfolio-title">Node.js App with current state of the gym & pool </h2>
+                        <h2 class="portfolio-title">Node.js Application</h2>
                         <p class="portfolio-description">
                             The task was to display the current status of the pool and the gym based on the data of the schedule of their work and holidays from the xlsx-file.
                         </p>
@@ -103,13 +88,7 @@
                     <!-- Portfolio Modal 1 -->
                     <div class="portfolio-modal">
                         <button class="modal-close">
-                            <svg x="0px" y="0px"
-                              viewBox="0 0 30 17" height="17" width="30">
-                               <g transform="translate(-15 -15)">
-                                 <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                                   35.8,16.5 37,17.7    "/>
-                               </g>
-                           </svg> 
+                            <i class="far fa-times-circle fa-3x"></i>
                         </button>
 
                         <div class="portfolio-header">
@@ -188,13 +167,7 @@
                     <!-- Portfolio Modal 2 -->
                     <div class="portfolio-modal">
                         <button class="modal-close">
-                            <svg x="0px" y="0px"
-                              viewBox="0 0 30 17" height="17" width="30">
-                               <g transform="translate(-15 -15)">
-                                 <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                                   35.8,16.5 37,17.7    "/>
-                               </g>
-                           </svg> 
+                            <i class="far fa-times-circle fa-3x"></i>
                         </button>
 
                         <div class="portfolio-header">
@@ -232,7 +205,7 @@
                     <img src="images/content/thumbnails/002_landing_page_markup.png" alt="Portfolio Item Image">
                     
                     <figcaption>
-                        <h2 class="portfolio-title">Adaptive Page Markup for landing page</h2>
+                        <h2 class="portfolio-title">Adaptive Landing Markup</h2>
                         <p class="portfolio-description">It was necessary to create a landing page on an existing design.</p>
                         <p class="portfolio-description">The landing page should be adapted to different types of devices - computers, laptops, tablets, smartphones.</p>
                         <a href="#" class="portfolio-link">More Info</a>
@@ -241,13 +214,7 @@
                     <!-- Portfolio Modal 3 -->
                     <div class="portfolio-modal">
                         <button class="modal-close">
-                            <svg x="0px" y="0px"
-                              viewBox="0 0 30 17" height="17" width="30">
-                               <g transform="translate(-15 -15)">
-                                 <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                                   35.8,16.5 37,17.7    "/>
-                               </g>
-                           </svg> 
+                            <i class="far fa-times-circle fa-3x"></i>
                         </button>
 
                         <div class="portfolio-header">
@@ -264,7 +231,7 @@
                                 <p class="portfolio-description">I've built an adaptive front-end page using HTML5, sass, and media-queries (without bootstrap).</p>
                             </div>
 
-                            <img class="portfolio-full-width" src="images/content/project_details/adaptive_landing_page.PNG" alt="Portfolio Item Image">
+                            <img class="portfolio-full-width" src="images/content/project_details/adaptive_landing_page.png" alt="Portfolio Item Image">
                             
                             <img class="portfolio-pull-left" src="images/content/project_details/landing_design.png" alt="Landing Design Image">
 
@@ -281,7 +248,7 @@
                     <img src="images/content/thumbnails/002_page_404.png" alt="Portfolio Item Image">
                     
                     <figcaption>
-                        <h2 class="portfolio-title">Web Design for the Error 404 page</h2>
+                        <h2 class="portfolio-title">Error 404 page Design</h2>
                         <p class="portfolio-description">Task was to create an interesting design for the Error 404 page (without any information about site)</p>
                         <a href="#" class="portfolio-link">More Info</a>
                     </figcaption>
@@ -289,13 +256,7 @@
                     <!-- Portfolio Modal 4 -->
                     <div class="portfolio-modal">
                         <button class="modal-close">
-                            <svg x="0px" y="0px"
-                              viewBox="0 0 30 17" height="17" width="30">
-                               <g transform="translate(-15 -15)">
-                                 <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                                   35.8,16.5 37,17.7    "/>
-                               </g>
-                           </svg> 
+                            <i class="far fa-times-circle fa-3x"></i> 
                         </button>
 
                         <div class="portfolio-header">
@@ -336,13 +297,7 @@
                     <!-- Portfolio Modal 5 -->
                     <div class="portfolio-modal">
                         <button class="modal-close">
-                            <svg x="0px" y="0px"
-                              viewBox="0 0 30 17" height="17" width="30">
-                               <g transform="translate(-15 -15)">
-                                 <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
-                                   35.8,16.5 37,17.7    "/>
-                               </g>
-                           </svg> 
+                            <i class="far fa-times-circle fa-3x"></i> 
                         </button>
 
                         <div class="portfolio-header">
@@ -373,7 +328,7 @@
             </div>
         </section> <!-- end of .portfolio -->
         
-        <footer>
+        <footer id="contact">
             <p>Follow me on social media</p>
 
             <div class="social-icons">

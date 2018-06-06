@@ -109,7 +109,7 @@
 		height: 3em;
 		left: 1em;
 		top: 1em;
-		padding: 4px 0 0;
+		padding: 0; //.35px 0 0;
 
 		background: $white;
 		border: 0;
@@ -117,15 +117,18 @@
 		box-shadow: 0 0 5px rgba(black, .5);
 	
 		cursor: pointer;
+
+		i {
+			display: block;
+		}
 	}
 
 	.portfolio-header {
 		padding: 5em 0;
 		margin-bottom: 2em;
 
-		background-image: url('../images/backgrounds/header-bg.png');
+		background: url('../images/backgrounds/header-bg.png') no-repeat center;
 		background-size: cover;
-		background-position: center;
 
 		text-align: left;
 		
@@ -161,6 +164,9 @@
 		} // end of .portfolio-subtitle
 
 	.portfolio-content {
+		display: flex;
+		flex-direction: column;
+		
 		width: 85%;
 		margin: 0 auto;
 		padding-bottom: 2em;
@@ -174,7 +180,7 @@
 		.description-part {
 			display: flex-inline;
 			flex-direction: row;
-			padding: 2em 0;
+			margin: 2em 0;
 
 			img {
 				width: 30%;

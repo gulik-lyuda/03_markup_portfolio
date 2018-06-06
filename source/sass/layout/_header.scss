@@ -1,4 +1,4 @@
-header {
+.general-header {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -6,17 +6,14 @@ header {
 	justify-content: center;
 
 	height: 100vh;
-	background-image: url('../images/backgrounds/header-bg.png');
+	background: url('../images/backgrounds/header-bg.png') no-repeat center;
 	background-size: cover;
-	background-position: center;
 
-	.menu-button {
+	.hamburger {
 		position: absolute;
 		top: 3em;
 		left: 3em;
 
-		background: transparent;
-		border: 0;
 	} // end of .menu-button
 
 	.logo {
@@ -62,4 +59,4 @@ header {
 			margin: 2em auto 0;
 		}
 	} // end of h1
-} // end of header
+} // end of .page-header
