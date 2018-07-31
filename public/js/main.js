@@ -6,18 +6,22 @@ const nav = document.querySelector('nav');
 const containerAll = document.querySelector('.container-all');
 
 // change state of our nav menu and underlying page content
-navToggle.addEventListener('click', _ => {
+if (navToggle) {
+	navToggle.addEventListener('click', _ => {
 	containerAll.style.transition = 'transform ease-out 250ms';  //just fix some bug for mobile devices with incorrect transition
 	document.body.classList.toggle('nav-is-open');
 	navToggle.classList.toggle('is-active');
-})
+	})
+}
 
 //hide our nav menu if user click some menu item
-nav.addEventListener('click', _ => {
-	containerAll.style.transition = '0ms';  //just fix some bug for mobile devices with incorrect transition
-	document.body.classList.remove('nav-is-open');
-	navToggle.classList.remove('is-active');
-})
+if (nav) {
+	nav.addEventListener('click', _ => {
+		containerAll.style.transition = '0ms';  //just fix some bug for mobile devices with incorrect transition
+		document.body.classList.remove('nav-is-open');
+		navToggle.classList.remove('is-active');
+	})
+}
 
 // 
 // Work with modals
@@ -29,7 +33,7 @@ portfolioContainer.addEventListener('click', e => {
 
 	if (!modalToggle) return;
 
-	const modal = modalToggle.parentNode.nextElementSibling;  //it'll be our portfolio-modal div
+	const modal = modalToggle.parentNode.parentNode.nextElementSibling;  //it'll be our portfolio-modal div
 	const closeButton = modal.querySelector('.modal-close');	
 	
 	const modalOpen = _ => {

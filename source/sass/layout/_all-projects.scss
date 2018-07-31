@@ -1,0 +1,23 @@
+.filtered-gallery {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    margin: 15px;
+
+    border: 1px solid rgba($dark-accent, 0.75);
+
+    text-transform: uppercase;
+  }
+}
+
+.filtered-items {
+  background: $light-grey;
+  padding: 25px 0;
+}
+
+.portfolio-items {
+    @include container($max-width: 100em);
+    margin-bottom: 25px;
+}

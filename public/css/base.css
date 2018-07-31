@@ -5838,7 +5838,7 @@ h2 {
     h2 {
       font-size: 3rem; } }
 
-nav {
+.main-menu {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -5851,7 +5851,7 @@ nav {
   transition: -webkit-transform ease-out 250ms;
   transition: transform ease-out 250ms;
   transition: transform ease-out 250ms, -webkit-transform ease-out 250ms; }
-  nav ul {
+  .main-menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5868,13 +5868,13 @@ nav {
     padding: 0;
     background: #ca0022;
     list-style: none; }
-    nav ul li {
+    .main-menu ul li {
       text-align: center; }
-      nav ul li:not(:last-of-type) {
+      .main-menu ul li:not(:last-of-type) {
         border-bottom: 1px solid #79242f; }
-      nav ul li:hover {
+      .main-menu ul li:hover {
         background: rgba(121, 36, 47, 0.3); }
-  nav a {
+  .main-menu a {
     display: inline-block;
     width: 100%;
     padding: calc(100vh/8) 0;
@@ -6068,7 +6068,8 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin-bottom: 25px; }
 
 .portfolio-item {
   -webkit-box-flex: 1;
@@ -6078,7 +6079,9 @@ nav {
   overflow: hidden; }
   .portfolio-item img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    border: 1px solid #79242f;
+    border-radius: 5px; }
   .portfolio-item figcaption {
     position: absolute;
     top: 100%;
@@ -6104,15 +6107,29 @@ nav {
       font-size: 2.5rem; }
     .portfolio-item figcaption .portfolio-description {
       display: none; }
-    .portfolio-item figcaption .portfolio-link {
+    .portfolio-item figcaption .portfolio-links {
+      width: 100%;
       -ms-flex-item-align: start;
           align-self: flex-start;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .portfolio-item figcaption .portfolio-link,
+    .portfolio-item figcaption .demo-link {
       color: #fff;
       font-weight: 900;
       font-size: 1.1rem;
       text-decoration: none;
       border-bottom: 2px solid #fff; }
-      .portfolio-item figcaption .portfolio-link::after {
+      .portfolio-item figcaption .portfolio-link::after,
+      .portfolio-item figcaption .demo-link::after {
         display: inline-block;
         height: .8em;
         width: .8em;
@@ -6220,6 +6237,10 @@ nav {
         float: left;
         margin-bottom: 2em; } }
 
+.all-projects-link {
+  display: block;
+  text-align: center; }
+
 @supports (display: grid) {
   .portfolio-items {
     display: grid;
@@ -6294,3 +6315,26 @@ footer {
     width: 15%;
     margin: 4em auto;
     background: rgba(255, 255, 255, 0.15); }
+
+.filtered-gallery {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .filtered-gallery .btn {
+    margin: 15px;
+    border: 1px solid rgba(121, 36, 47, 0.75);
+    text-transform: uppercase; }
+
+.filtered-items {
+  background: #e8e9eb;
+  padding: 25px 0; }
+
+.portfolio-items {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 100em;
+  margin-bottom: 25px; }
