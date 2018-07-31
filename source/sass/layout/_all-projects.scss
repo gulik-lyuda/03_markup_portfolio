@@ -1,14 +1,25 @@
 .filtered-gallery {
-  width: 75%;
+  @include container($max-width: 100em);
   display: flex;
   justify-content: center;
 
   .btn {
     margin: 15px;
+    padding: 10px 30px;
 
     border: 1px solid rgba($dark-accent, 0.75);
 
     text-transform: uppercase;
+
+    &:hover {
+      color: $white;
+      background-color: rgba($dark-accent, .75);
+    }
+  }
+
+  .active {
+    font-weight: bold;
+    color: $accent;
   }
 }
 
@@ -20,4 +31,12 @@
 .portfolio-items {
     @include container($max-width: 100em);
     margin-bottom: 25px;
+
+    .portfolio-item {
+      display: none;
+    }
+
+    .show {
+        display: block;
+    }
 }

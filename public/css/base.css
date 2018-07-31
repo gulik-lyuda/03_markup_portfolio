@@ -6317,7 +6317,9 @@ footer {
     background: rgba(255, 255, 255, 0.15); }
 
 .filtered-gallery {
-  width: 75%;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 100em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6326,8 +6328,15 @@ footer {
           justify-content: center; }
   .filtered-gallery .btn {
     margin: 15px;
+    padding: 10px 30px;
     border: 1px solid rgba(121, 36, 47, 0.75);
     text-transform: uppercase; }
+    .filtered-gallery .btn:hover {
+      color: #fff;
+      background-color: rgba(121, 36, 47, 0.75); }
+  .filtered-gallery .active {
+    font-weight: bold;
+    color: #ca0022; }
 
 .filtered-items {
   background: #e8e9eb;
@@ -6338,3 +6347,7 @@ footer {
   margin: 0 auto;
   max-width: 100em;
   margin-bottom: 25px; }
+  .portfolio-items .portfolio-item {
+    display: none; }
+  .portfolio-items .show {
+    display: block; }

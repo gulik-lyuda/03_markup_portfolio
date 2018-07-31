@@ -24,12 +24,12 @@
             <h1>View All My Projects</h1>
 
             <div class="filtered-gallery">
-                <div class="filter-buttons">
-                    <button class="btn filter-btn" data-filter="all">all</button>
-                    <button class="btn filter-btn" data-filter="web-design">web design</button>
-                    <button class="btn filter-btn" data-filter="mobile-design">mobile design</button>
-                    <button class="btn filter-btn" data-filter="development">web development</button>
-                    <button class="btn filter-btn" data-filter="complex">web design & development</button>
+                <div id="filter-buttons">
+                    <button class="btn active" onclick="filterSelection('all')">all</button>
+                    <button class="btn" onclick="filterSelection('web-design')">web design</button>
+                    <button class="btn" onclick="filterSelection('mobile-design')">mobile design</button>
+                    <button class="btn" onclick="filterSelection('development')">web development</button>
+                    <button class="btn" onclick="filterSelection('complex')">web design & development</button>
                 </div>
             </div>
         </header>
@@ -435,7 +435,6 @@
                     <!-- end of Portfolio Modal -->
                 </figure>
                 <!-- end of Portfolio Item -->
-
             </div>
 
             <a href="index.html" class="all-projects-link"><h2>Back...</h2></a>
