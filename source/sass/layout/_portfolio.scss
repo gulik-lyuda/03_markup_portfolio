@@ -190,12 +190,13 @@
 		}
 
 		.description-part {
-			display: flex-inline;
+			display: inline-flex;
 			flex-direction: row;
 			margin: 2em 0;
 
 			img {
 				width: 30%;
+				height: 30%;
 			}
 		} // end of .description-part
 

@@ -5917,7 +5917,7 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background: url("../images/backgrounds/header-bg.png") no-repeat center;
+  background: url("../images/backgrounds/header-bg-min.png") no-repeat center;
   background-size: cover; }
   .general-header .hamburger {
     position: absolute;
@@ -6040,7 +6040,7 @@ h2 {
     grid-column: name / port;
     grid-row: 1 / 2;
     -ms-flex-item-align: end;
-        align-self: end; }
+        align-self: flex-end; }
   .about-subtitle,
   .about-text {
     grid-column: port / port; }
@@ -6208,14 +6208,17 @@ h2 {
     .portfolio-modal .portfolio-content .general-info {
       width: 50%; }
     .portfolio-modal .portfolio-content .description-part {
-      display: flex-inline;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
       margin: 2em 0; }
       .portfolio-modal .portfolio-content .description-part img {
-        width: 30%; }
+        width: 30%;
+        height: 30%; }
     .portfolio-modal .portfolio-content .portfolio-full-width {
       width: 100vw;
       height: 90vh;
