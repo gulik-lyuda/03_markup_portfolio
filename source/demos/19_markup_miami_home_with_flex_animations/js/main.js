@@ -25,7 +25,7 @@ $(function(){
     });
 
 // add slider for the Testimonials section with different slides for mobile devices & computers
-    if ( window.innerWidth > 1024 ) {
+    if ( window.innerWidth < 1024 ) {
         $('#slider').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -54,8 +54,6 @@ $(function(){
     });
 
 // add modal form for calling to order
-    $('#modal_box, #main_page__hide').hide(); 
-
     // show modal form when clicking "Call to order" link in the Header section
     $('#call_link').click(function(){
         $('#modal_box, #main_page__hide').show(); 

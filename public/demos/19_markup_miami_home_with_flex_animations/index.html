@@ -1,592 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Miami (home page) with animations</title>
-
-    <!-- Add favicon -->
-    <link rel="icon" href="images/icons/wizard.ico" type="image/x-icon" />
-    <!-- Add main page font -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
-    <!-- Connect our stylesheets -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/general-flex-css.css">
-    <link rel="stylesheet" href="css/vendors/slick.css">
-    <link rel="stylesheet" href="css/vendors/slick-theme.css">
-    <link rel="stylesheet" href="css/base.css">
-
-    <!-- Additional library for using media queries for IE 8.0 and less -->
-    <script type="text/javascript" src="js/vendors/respond.min.js"></script>
-</head>
-
-<body>
-    <div class="page-wrapper">
-        <header id="header" class="main_flex
-                       flex__jcontent_center
-                       flex__align-content_space-between">
-            <div class="header__top 
-                        wrapper 
-                        main_flex__nowrap 
-                        flex__align-items_center 
-                        flex__jcontent_between">
-                <a href="tel:" class="header__phone">8 800 500 50 50</a>
-
-                <div class="header__logo">
-                    <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 448.6 293.9" style="enable-background:new 0 0 448.6 293.9;" xml:space="preserve">
-                   <style type="text/css">
-                       .st0{fill:#FFFFFF;}
-                   </style>
-                   <g>
-                       <path class="st0" d="M299.9,130.3c3.4,0,6.2,2.7,6.2,6c0,3.4-2.7,6.1-6.2,6.1c-3.5,0-6.3-2.7-6.3-6.1
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Miami (home page) with animations</title><link rel="icon" href="images/icons/wizard.ico" type="image/x-icon"><link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet"><link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/general-flex-css.css"><link rel="stylesheet" href="css/vendors/slick.css"><link rel="stylesheet" href="css/vendors/slick-theme.css"><link rel="stylesheet" href="css/base.css"><script type="text/javascript" src="js/vendors/respond.min.js"></script></head><body><div class="page-wrapper"><header id="header" class="main_flex flex__jcontent_center flex__align-content_space-between"><div class="header__top wrapper main_flex__nowrap flex__align-items_center flex__jcontent_between"><a href="tel:" class="header__phone">8 800 500 50 50</a><div class="header__logo"><svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.6 293.9" style="enable-background:new 0 0 448.6 293.9;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><path class="st0" d="M299.9,130.3c3.4,0,6.2,2.7,6.2,6c0,3.4-2.7,6.1-6.2,6.1c-3.5,0-6.3-2.7-6.3-6.1
                            C293.6,132.9,296.4,130.3,299.9,130.3L299.9,130.3z M299.8,131.5c-2.6,0-4.7,2.2-4.7,4.8c0,2.7,2,4.8,4.7,4.8
                            c2.6,0,4.6-2.1,4.6-4.8C304.5,133.7,302.5,131.5,299.8,131.5L299.8,131.5z M298.9,139.5h-1.4v-6c0.6-0.1,1.3-0.2,2.3-0.2
                            c1.1,0,1.7,0.2,2.1,0.5c0.4,0.3,0.6,0.7,0.6,1.3c0,0.7-0.6,1.2-1.3,1.4v0.1c0.6,0.2,0.9,0.7,1.1,1.5c0.2,0.9,0.3,1.3,0.4,1.5h-1.5
                            c-0.2-0.2-0.3-0.7-0.5-1.5c-0.1-0.6-0.5-0.9-1.3-0.9h-0.7V139.5z M298.9,136.1h0.7c0.8,0,1.4-0.3,1.4-0.9c0-0.6-0.4-0.9-1.3-0.9
-                           c-0.4,0-0.6,0-0.8,0.1V136.1z"/>
-                       <polygon class="st0" points="212,0 209.7,0 171,75 106.2,35.2 102.3,35.1 135.4,137.6 157.8,134.6 138.4,77.5 181.7,102.6 
-                           189.6,86.4 189.6,86.3 210.6,44.6 228.3,81.4 247.2,70.4 	"/>
-                       <polygon class="st0" points="314.5,35.2 210.4,98.5 194.8,89.4 187.1,105.7 209,118.5 210.4,118.5 211.7,118.5 282.3,77.5 
-                           262.9,134.6 285.3,137.6 318.4,35.1 	"/>
-                   </g>
-                   <g>
-                       <polygon class="st0" points="55,206.6 3.7,159.6 0,159.6 0,241.3 16.4,241.3 16.4,192 53.7,226 56.2,226 91.5,192.1 91.5,241.3 
-                           108,241.3 108,159.6 104.2,159.6 	"/>
-                       <rect x="128.2" y="160.9" class="st0" width="16.4" height="80.4"/>
-                       <path class="st0" d="M208.3,158.5l-55.6,82.7h17.6l9.9-14.8h59.3l10.2,14.8H268l-56.7-82.7H208.3z M229.8,212.3h-40.2l19.9-29.6
-                           L229.8,212.3z"/>
-                       <polygon class="st0" points="329.8,206.6 278.5,159.6 274.8,159.6 274.8,241.3 291.2,241.3 291.2,192 328.4,226 330.9,226 
-                           366.3,192.1 366.3,241.3 382.7,241.3 382.7,159.6 379,159.6 	"/>
-                       <rect x="403" y="160.9" class="st0" width="16.4" height="80.4"/>
-                   </g>
-                   <path class="st0" d="M23.3,293.9c-13.1,0-22.5-5.5-22.5-15.3c0-9.8,10-15.7,22.2-15.7c9.3,0,13.8,1.7,15.6,2.4v3.6l-0.2,0.1
+                           c-0.4,0-0.6,0-0.8,0.1V136.1z"/><polygon class="st0" points="212,0 209.7,0 171,75 106.2,35.2 102.3,35.1 135.4,137.6 157.8,134.6 138.4,77.5 181.7,102.6 
+                           189.6,86.4 189.6,86.3 210.6,44.6 228.3,81.4 247.2,70.4 	"/><polygon class="st0" points="314.5,35.2 210.4,98.5 194.8,89.4 187.1,105.7 209,118.5 210.4,118.5 211.7,118.5 282.3,77.5 
+                           262.9,134.6 285.3,137.6 318.4,35.1 	"/></g><g><polygon class="st0" points="55,206.6 3.7,159.6 0,159.6 0,241.3 16.4,241.3 16.4,192 53.7,226 56.2,226 91.5,192.1 91.5,241.3 
+                           108,241.3 108,159.6 104.2,159.6 	"/><rect x="128.2" y="160.9" class="st0" width="16.4" height="80.4"/><path class="st0" d="M208.3,158.5l-55.6,82.7h17.6l9.9-14.8h59.3l10.2,14.8H268l-56.7-82.7H208.3z M229.8,212.3h-40.2l19.9-29.6
+                           L229.8,212.3z"/><polygon class="st0" points="329.8,206.6 278.5,159.6 274.8,159.6 274.8,241.3 291.2,241.3 291.2,192 328.4,226 330.9,226 
+                           366.3,192.1 366.3,241.3 382.7,241.3 382.7,159.6 379,159.6 	"/><rect x="403" y="160.9" class="st0" width="16.4" height="80.4"/></g><path class="st0" d="M23.3,293.9c-13.1,0-22.5-5.5-22.5-15.3c0-9.8,10-15.7,22.2-15.7c9.3,0,13.8,1.7,15.6,2.4v3.6l-0.2,0.1
                        c-2.3-1.5-6.4-3.9-15.3-3.9c-10.4,0-17.7,4.4-17.7,13.4c0,8.6,6.3,13,17.9,13c8,0,12-2.1,16-5.2l0.2,0.1v3.8
-                       C37.4,291.5,32,293.9,23.3,293.9z"/>
-                   <path class="st0" d="M65,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
+                       C37.4,291.5,32,293.9,23.3,293.9z"/><path class="st0" d="M65,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
                        C86.6,288.7,76.3,293.9,65,293.9z M64.9,291.6c10.9,0,17.2-4.8,17.2-13.1c0-8.4-6.6-13.3-17.2-13.3c-10.5,0-17,4.9-17,13.2
-                       C47.9,286.7,54,291.6,64.9,291.6z"/>
-                   <path class="st0" d="M93.4,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
+                       C47.9,286.7,54,291.6,64.9,291.6z"/><path class="st0" d="M93.4,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
                        c-0.2,8.6-0.2,20.7,0,29.8l-0.2,0.2h-3.6c-7.6-7.3-20.1-18.5-28.6-26c-0.1,6-0.1,18.3,0,25.9l-0.2,0.1h-2.5l-0.1-0.1
-                       c0.1-7.4,0.1-22.9,0-29.9L93.4,263.3z"/>
-                   <path class="st0" d="M136.9,293.4c0.2-9.3,0.2-22.6,0-29.6l0.2-0.2c3.7-0.1,6.9-0.6,15.4-0.6c12.3,0,23.2,5.1,23.2,15.8
+                       c0.1-7.4,0.1-22.9,0-29.9L93.4,263.3z"/><path class="st0" d="M136.9,293.4c0.2-9.3,0.2-22.6,0-29.6l0.2-0.2c3.7-0.1,6.9-0.6,15.4-0.6c12.3,0,23.2,5.1,23.2,15.8
                        c0,9.6-10.5,15.2-23.2,15.2c-7.5,0-12-0.4-15.4-0.4L136.9,293.4z M141,291c2.6,0.2,4.2,0.7,10.8,0.7c13.1,0,19.3-4.8,19.3-12.9
-                       c0-8.8-6.5-13.6-19.5-13.6c-5.1,0-7.6,0.4-10.6,0.9C140.9,271,140.9,282.8,141,291z"/>
-                   <path class="st0" d="M202,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
+                       c0-8.8-6.5-13.6-19.5-13.6c-5.1,0-7.6,0.4-10.6,0.9C140.9,271,140.9,282.8,141,291z"/><path class="st0" d="M202,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
                        C223.6,288.7,213.3,293.9,202,293.9z M201.9,291.6c10.9,0,17.2-4.8,17.2-13.1c0-8.4-6.6-13.3-17.2-13.3c-10.5,0-17,4.9-17,13.2
-                       C184.9,286.7,191.1,291.6,201.9,291.6z"/>
-                   <path class="st0" d="M247.9,293.5h-3.8l-0.1-0.1c0.2-9.3,0.2-23,0-29.9l0.2-0.1h3.8l0.2,0.2c-0.1,4.7-0.2,10.9-0.2,17.2
+                       C184.9,286.7,191.1,291.6,201.9,291.6z"/><path class="st0" d="M247.9,293.5h-3.8l-0.1-0.1c0.2-9.3,0.2-23,0-29.9l0.2-0.1h3.8l0.2,0.2c-0.1,4.7-0.2,10.9-0.2,17.2
                        c9.9-6.5,17.1-12,24.3-17.3h5.4l0.1,0.2c-5.3,3.1-11.7,7.4-18.4,12.1c5.6,5.1,13.2,11.9,20.3,17.7l-0.1,0.2h-5.8
-                       c-6.6-6.3-11.5-10.6-17.7-15.6l-8.2,5.7c0,3.4,0.1,6.8,0.2,9.8L247.9,293.5z"/>
-                   <path class="st0" d="M284.9,293.3c0.2-9.3,0.2-22.9,0-29.8l0.1-0.2h3.8l0.2,0.1c-0.2,10.4-0.1,20.1,0,29.9l-0.2,0.1H285L284.9,293.3
-                       z"/>
-                   <path class="st0" d="M298,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
+                       c-6.6-6.3-11.5-10.6-17.7-15.6l-8.2,5.7c0,3.4,0.1,6.8,0.2,9.8L247.9,293.5z"/><path class="st0" d="M284.9,293.3c0.2-9.3,0.2-22.9,0-29.8l0.1-0.2h3.8l0.2,0.1c-0.2,10.4-0.1,20.1,0,29.9l-0.2,0.1H285L284.9,293.3
+                       z"/><path class="st0" d="M298,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
                        c-0.2,8.6-0.2,20.7,0,29.8l-0.2,0.2h-3.6c-7.6-7.3-20.1-18.5-28.6-26c-0.1,6-0.1,18.3,0,25.9l-0.2,0.1h-2.5l-0.1-0.1
-                       c0.1-7.4,0.1-22.9,0-29.9L298,263.3z"/>
-                   <path class="st0" d="M361.7,293.9c-13,0-22.2-5.4-22.2-15.3c0-9.6,10.1-15.7,22-15.7c9.9,0,14.5,1.7,16.3,2.5v4l-0.2,0.1
+                       c0.1-7.4,0.1-22.9,0-29.9L298,263.3z"/><path class="st0" d="M361.7,293.9c-13,0-22.2-5.4-22.2-15.3c0-9.6,10.1-15.7,22-15.7c9.9,0,14.5,1.7,16.3,2.5v4l-0.2,0.1
                        c-2.2-1.8-6.1-4.3-16-4.3c-10.5,0-17.5,4.5-17.5,13.4c0,9,6,13,17.6,13c6.1,0,9.8-1.1,13.2-2.4c0.1-3.4,0.1-5.4,0-10.5l0.2-0.2h3.8
-                       l0.2,0.1c-0.2,4.9-0.2,7.7,0,12.1C374.3,292.7,369.4,293.9,361.7,293.9z"/>
-                   <path class="st0" d="M409.7,280c-4.7-0.8-11.9-0.1-18.2-1.5c-4.3-1-6.6-3.2-6.6-6.9c0-5.2,5-8.7,16.1-8.7c8.9,0,13.3,1.8,15,2.8v3.5
+                       l0.2,0.1c-0.2,4.9-0.2,7.7,0,12.1C374.3,292.7,369.4,293.9,361.7,293.9z"/><path class="st0" d="M409.7,280c-4.7-0.8-11.9-0.1-18.2-1.5c-4.3-1-6.6-3.2-6.6-6.9c0-5.2,5-8.7,16.1-8.7c8.9,0,13.3,1.8,15,2.8v3.5
                        l-0.2,0.1c-2-1.7-6.4-4.2-15-4.2c-10.1,0-12.6,2.9-12.6,5.7c0,2.5,1.6,3.9,4.8,4.5c4.9,1,11.7,0.4,17.5,1.3c5,0.7,8,2.8,8,6.9
                        c0,5.8-5.4,10.3-17.9,10.3c-9,0-14.3-2.1-16.5-3.5v-3.9l0.2-0.1c3.5,3.1,8.3,5.3,16.5,5.3c10.4,0,14.1-3,14.1-6.8
-                       C415,282.4,413.3,280.6,409.7,280z"/>
-                   <path class="st0" d="M436.5,160.4v1.6h-3v7.9h-1.9V162h-3v-1.6H436.5z M446.7,169.9l-0.3-5.6c0-0.7,0-1.6-0.1-2.6h-0.1
+                       C415,282.4,413.3,280.6,409.7,280z"/><path class="st0" d="M436.5,160.4v1.6h-3v7.9h-1.9V162h-3v-1.6H436.5z M446.7,169.9l-0.3-5.6c0-0.7,0-1.6-0.1-2.6h-0.1
                        c-0.2,0.8-0.5,1.9-0.8,2.8l-1.7,5.3h-2l-1.7-5.4c-0.2-0.7-0.5-1.8-0.7-2.7h-0.1c0,0.9,0,1.8-0.1,2.6l-0.3,5.6H437l0.7-9.5h2.9
-                       l1.6,4.6c0.2,0.7,0.4,1.4,0.6,2.4h0.1c0.2-0.8,0.5-1.7,0.6-2.3l1.6-4.7h2.8l0.7,9.5H446.7z"/>
-                   </svg>
-                </div>
-
-                <div id="call_link" class="header__call">call to order</div>
-            </div>
-            <!-- end of .header__top -->
-
-            <div class="header__bottom">
-                <nav class="wrapper">
-                    <ul class="main_flex__nowrap 
-                               flex__align-items_center 
-                               flex__jcontent_between">
-                        <li>
-                            <a href="#header">home</a>
-                        </li>
-                        <li>
-                            <a href="#about">about us</a>
-                        </li>
-                        <li>
-                            <a href="#gallery">gallery</a>
-                        </li>
-                        <li>
-                            <a href="#consultation">consultation</a>
-                        </li>
-                        <li>
-                            <a href="#testimonials">testimonials</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- end of .wrapper -->
-            </div>
-            <!-- end of .header__bottom -->
-        </header>
-        <!-- end of .header -->
-
-        <section id="about" class="section">
-            <div class="wrapper
-                        main_flex__nowrap
-                        flex__jcontent_between
-                        flex__align-items_start">
-                <div class="about__left">
-                    Miami
-                    <strong>best</strong>
-                    <br> realry
-                    <span>—
-                        <br> this
-                    </span>
-                </div>
-                <!-- end of .about__left -->
-
-                <div class="about__right">
-                    <p>
-                        <strong>50 years experience in love.</strong>
-                        <br> Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the
-                        music of the early twentieth century, microforms, found a distant historical.
-                    </p>
-                    <ol>
-                        <li>The market leader in real estate since 2003</li>
-                        <li>Awards Real Estate Company, 2010, 2011, 2013</li>
-                        <li>More than 200 satisfied customers premium segment</li>
-                        <li>We focus only on new buildings and high-level doskanalno know this area better than other specialists.</li>
-                        <li>Working directly with developers - so have more useful information about the profitable deals</li>
-                    </ol>
-                    <p>
-                        <strong>
-                            We will never late!
-                            <br> Guaranteed secure transaction - 100%
-                        </strong>
-                    </p>
-                </div>
-                <!-- end of .about__right -->
-            </div>
-            <!-- end of .wrapper -->
-        </section>
-        <!-- end of .about -->
-
-        <section id="gallery" class="section">
-            <div class="section__title">
-                <h2>gallery</h2>
-                <div class="section__title_decoration
-                            main_flex__nowrap
-                            flex__align-content_center
-                            flex__align-items_center
-                            flex__jcontent_between">
-                    <div class="line"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13">
-                        <g id="" data-name="">
-                            <path class="" d="M9.85,13h.21l3.58-7.08,6,3.75.36,0L16.94,0,14.86.29l1.8,5.4-4-2.38-.73,1.53h0L10,8.79,8.34,5.31l-1.75,1ZM.36,9.67l9.64-6,1.44.86L12.16,3l-2-1.21H9.88L3.34,5.68,5.14.28,3.06,0,0,9.69Z"
-                            />
-                        </g>
-                    </svg>
-                    <div class="line"></div>
-                </div>
-            </div>
-            <!-- end of .section__title -->
-
-            <div id="gallery__box" class="wrapper">
-                <div class="apart">
-                    <div class="apart__photos
-                                mode_right
-                                main_flex__nowrap
-                                flex__jcontent_between">
-                        <div class="apart__photo">
-                            <img src="images/content/apart_01_1.jpg" alt="Apartment Photo 1">
-                        </div>
-                        <div class="apart__photo">
-                            <img src="images/content/apart_01_2.jpg" alt="Apartment Photo 2">
-                        </div>                        
-                        
-                    </div>
-                    <h3>Marina Palms /
-                        <span>North Miami Beach, FL 33162</span>
-                    </h3>
-                </div>
-                <!-- end of.apart -->
-                <div class="apart">
-                    <div class="apart__photos
-                                main_flex__nowrap
-                                flex__jcontent_between">
-                                <div class="apart__photo">
-                                    <img src="images/content/apart_02_1.jpg" alt="Apartment Photo 1">
-                                </div>
-                                <div class="apart__photo">
-                                    <img src="images/content/apart_02_2.jpg" alt="Apartment Photo 2">
-                                </div>  
-                    </div>
-                    <h3>Edition Residens /
-                        <span>Miami Beach, FL 33139</span>
-                    </h3>
-                </div>
-                <!-- end of.apart -->
-                <div class="apart">
-                    <div class="apart__photos
-                                mode_left
-                                main_flex__nowrap
-                                flex__jcontent_between">
-                                <div class="apart__photo">
-                                    <img src="images/content/apart_03_1.jpg" alt="Apartment Photo 1">
-                                </div>
-                                <div class="apart__photo">
-                                    <img src="images/content/apart_03_2.jpg" alt="Apartment Photo 2">
-                                </div>  
-                    </div>
-                    <h3>Faena House /
-                        <span>Miami Beach, FL 33140</span>
-                    </h3>
-                </div>
-                <!-- end of.apart -->
-
-                <div id="gallery__view_all_btn" class="button_wrapper">
-                    <a href="#" class="button
-                                       button_inline">view all</a>
-                </div>
-            </div>
-            <!-- end of .wrapper -->
-        </section>
-        <!-- end of .gallery -->
-
-        <section id="consultation" class="section">
-            <div class="section__title">
-                <h2>consultation</h2>
-                <div class="section__title_decoration
-                            main_flex__nowrap
-                            flex__align-content_center
-                            flex__align-items_center
-                            flex__jcontent_between">
-                    <div class="line"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13">
-                        <g id="" data-name="">
-                            <path class="" d="M9.85,13h.21l3.58-7.08,6,3.75.36,0L16.94,0,14.86.29l1.8,5.4-4-2.38-.73,1.53h0L10,8.79,8.34,5.31l-1.75,1ZM.36,9.67l9.64-6,1.44.86L12.16,3l-2-1.21H9.88L3.34,5.68,5.14.28,3.06,0,0,9.69Z"
-                            />
-                        </g>
-                    </svg>
-                    <div class="line"></div>
-                </div>
-            </div>
-
-            <div class="wrapper
-                        main_flex__nowrap
-                        flex__jcontent_between
-                        flex__align-items_start">
-                <div class="consultation__left">
-                    <h3>How long have
-                        <br> you do yourself a gift?
-                    </h3>
-                    <p>The procedural change mezzo forte starts izoritmichesky pickup at these moments        stop LA Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism,       which originated in the music of the early twentieth century, microforms, found a      distant historical
-                    </p>
-                </div>
-                <!-- end of .consultation__left -->
-
-                <div class="consultation__right">
-                    <form action="" name="consultation" id="consultation_form">
-                        <div class="form__field">
-                            <input type="text" placeholder="name" class="input">
-                        </div>
-                        <div class="form__field">
-                            <input type="text" placeholder="phone" class="input">
-                        </div>
-                        <div class="form__field">
-                            <input type="text" placeholder="email" class="input">
-                        </div>
-                        <div class="form__submit">
-                            <button type="submit" class="button">consultation</button>
-                        </div>
-                    </form>
-                </div>
-                <!-- end of .consultation__right -->
-            </div>
-            <!-- end of .wrapper -->
-        </section>
-        <!-- end of .consultation -->
-
-        <section id="testimonials" class="section">
-            <div class="section__title">
-                <h2>testimonials</h2>
-                <div class="section__title_decoration
-                            main_flex__nowrap
-                            flex__align-content_center
-                            flex__align-items_center
-                            flex__jcontent_between">
-                    <div class="line"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13">
-                        <g id="" data-name="">
-                            <path class="" d="M9.85,13h.21l3.58-7.08,6,3.75.36,0L16.94,0,14.86.29l1.8,5.4-4-2.38-.73,1.53h0L10,8.79,8.34,5.31l-1.75,1ZM.36,9.67l9.64-6,1.44.86L12.16,3l-2-1.21H9.88L3.34,5.68,5.14.28,3.06,0,0,9.69Z"
-                            />
-                        </g>
-                    </svg>
-                    <div class="line"></div>
-                </div>
-            </div>
-            <!-- end of .section__title -->
-
-            <div id="slider"
-                 class="wrapper
-                        main_flex__nowrap
-                        flex__jcontent_between
-                        flex__align-content_center
-                        flex__align-items_start">
-                <div class="testimonial">
-                    <div class="testimonial__photo">
-                        <img src="images/content/person_1.jpg" alt="Person 1 Photo">
-                    </div>
-                    <h4 class="testimonial__name">Stev Joni</h4>
-                    <div class="testimonial__position">Founder Lucoil</div>
-                    <div class="testimonial__description">
-                        <p>Nice work, Certificates National Association of Realtors (USA).</p>
-                    </div>
-                </div>
-                <!-- end of .testimonial -->
-                <div class="testimonial">
-                    <div class="testimonial__photo">
-                        <img src="images/content/person_2.jpg" alt="Person 2 Photo">
-                    </div>
-                    <h4 class="testimonial__name">Alisher Usmanov</h4>
-                    <div class="testimonial__position">Ural Steel</div>
-                    <div class="testimonial__description">
-                        <p>My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy
-                            with all my heart. <br>I'm all alone and blissfully happy in the local edge. as if created
-                            for the likes of me.</p>
-                    </div>
-                </div>
-                <!-- end of .testimonial -->
-                <div class="testimonial">
-                    <div class="testimonial__photo">
-                        <img src="images/content/person_3.jpg" alt="Person 3 Photo">
-                    </div>
-                    <h4 class="testimonial__name">Алексей Мордашов</h4>
-                    <div class="testimonial__position">ГазПром</div>
-                    <div class="testimonial__description">
-                        <p>When my lovely valley of steam <br> rises and half-day sun is above an impermeable. thicket</p>
-                    </div>
-                </div>
-                <!-- end of .testimonial -->
-                <div class="testimonial">
-                    <div class="testimonial__photo">
-                        <img src="images/content/person_1.jpg" alt="Person 1 Photo">
-                    </div>
-                    <h4 class="testimonial__name">Stev Joni</h4>
-                    <div class="testimonial__position">Founder Lucoil</div>
-                    <div class="testimonial__description">
-                        <p>Nice work, Certificates National Association of Realtors (USA).</p>
-                    </div>
-                </div>
-                <!-- end of .testimonial -->
-                <div class="testimonial">
-                    <div class="testimonial__photo">
-                        <img src="images/content/person_2.jpg" alt="Person 2 Photo">
-                    </div>
-                    <h4 class="testimonial__name">Alisher Usmanov</h4>
-                    <div class="testimonial__position">Ural Steel</div>
-                    <div class="testimonial__description">
-                        <p>My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy
-                            with all my heart. <br>I'm all alone and blissfully happy in the local edge. as if created
-                            for the likes of me.</p>
-                    </div>
-                </div>
-                <!-- end of .testimonial -->
-                <div class="testimonial">
-                    <div class="testimonial__photo">
-                        <img src="images/content/person_3.jpg" alt="Person 3 Photo">
-                    </div>
-                    <h4 class="testimonial__name">Алексей Мордашов</h4>
-                    <div class="testimonial__position">ГазПром</div>
-                    <div class="testimonial__description">
-                        <p>When my lovely valley of steam <br> rises and half-day sun is above an impermeable. thicket</p>
-                    </div>
-                </div>
-                <!-- end of .testimonial -->
-                
-            </div>
-            <!-- end of .wrapper -->
-        </section>
-        <!-- end of .testimonials -->
-
-        <section id="contact" class="section">
-            <div class="section__title">
-                <h2>contact</h2>
-                <div class="section__title_decoration
-                            main_flex__nowrap
-                            flex__align-content_center
-                            flex__align-items_center
-                            flex__jcontent_between">
-                    <div class="line"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13">
-                        <g id="" data-name="">
-                            <path class="" d="M9.85,13h.21l3.58-7.08,6,3.75.36,0L16.94,0,14.86.29l1.8,5.4-4-2.38-.73,1.53h0L10,8.79,8.34,5.31l-1.75,1ZM.36,9.67l9.64-6,1.44.86L12.16,3l-2-1.21H9.88L3.34,5.68,5.14.28,3.06,0,0,9.69Z"
-                            />
-                        </g>
-                    </svg>
-                    <div class="line"></div>
-                </div>
-            </div>
-            <!-- end of .section__title -->
-            <div class="wrapper
-                        main_flex__nowrap
-                        flex__jcontent_between
-                        flex__align-content_flex-start
-                        flex__align-items_start">
-                <div class="contact__left">
-                    <p>
-                        <a href="mailto:hello@miami.com">Hello@miami.com</a>
-                    </p>
-                    <p>8 800 678 78 78
-                        <br> 8 800 700 98 98
-                    </p>
-                    <p>400 first ave. n.
-                        <br> suite 700
-                        <br> Minneapolis, MN 55401
-                    </p>
-                </div>
-                <!-- end of .contact__left -->
-                
-                <div class="contact__right">
-                    <form action="" name="contact" id="contact_form">
-                        <div class="form__field">
-                            <input type="text" placeholder="name" class="input">
-                        </div>
-                        <div class="form__field">
-                            <input type="text" placeholder="email" class="input">
-                        </div>
-                        <div class="form__field">
-                            <textarea class="textarea" name="message" placeholder="message" id=""></textarea>
-                        </div>
-                        <div class="form__submit">
-                            <button class="button">write to us</button>
-                        </div>
-                    </form>
-                </div>
-                <!-- end of .contact__right -->
-            </div>
-            <!-- end of .wrapper -->
-        </section>
-        <!-- end of .contact -->
-
-        <footer class="main_flex
-                        flex__align-content_center
-                        flex__align-items_center
-                        flex__jcontent_center">
-            <div class="footer__logo">
-                <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 448.6 293.9" style="enable-background:new 0 0 448.6 293.9;" xml:space="preserve">
-               <style type="text/css">
-                   .st0{fill:#FFFFFF;}
-               </style>
-               <g>
-                   <path class="st0" d="M299.9,130.3c3.4,0,6.2,2.7,6.2,6c0,3.4-2.7,6.1-6.2,6.1c-3.5,0-6.3-2.7-6.3-6.1
+                       l1.6,4.6c0.2,0.7,0.4,1.4,0.6,2.4h0.1c0.2-0.8,0.5-1.7,0.6-2.3l1.6-4.7h2.8l0.7,9.5H446.7z"/></svg></div><div id="call_link" class="header__call">call to order</div></div><div class="header__bottom"><nav class="wrapper"><ul class="main_flex__nowrap flex__align-items_center flex__jcontent_between"><li><a href="#header">home</a></li><li><a href="#about">about us</a></li><li><a href="#gallery">gallery</a></li><li><a href="#consultation">consultation</a></li><li><a href="#testimonials">testimonials</a></li><li><a href="#contact">contact</a></li></ul></nav></div></header><section id="about" class="section"><div class="wrapper main_flex__nowrap flex__jcontent_between flex__align-items_start"><div class="about__left">Miami <strong>best</strong><br>realry <span>—<br>this</span></div><div class="about__right"><p><strong>50 years experience in love.</strong><br>Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical.</p><ol><li>The market leader in real estate since 2003</li><li>Awards Real Estate Company, 2010, 2011, 2013</li><li>More than 200 satisfied customers premium segment</li><li>We focus only on new buildings and high-level doskanalno know this area better than other specialists.</li><li>Working directly with developers - so have more useful information about the profitable deals</li></ol><p><strong>We will never late!<br>Guaranteed secure transaction - 100%</strong></p></div></div></section><section id="gallery" class="section"><div class="section__title"><h2>gallery</h2><div class="section__title_decoration main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"><div class="line"></div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13"><g id="" data-name=""><path class="" d="M9.85,13h.21l3.58-7.08,6,3.75.36,0L16.94,0,14.86.29l1.8,5.4-4-2.38-.73,1.53h0L10,8.79,8.34,5.31l-1.75,1ZM.36,9.67l9.64-6,1.44.86L12.16,3l-2-1.21H9.88L3.34,5.68,5.14.28,3.06,0,0,9.69Z"/></g></svg><div class="line"></div></div></div><div id="gallery__box" class="wrapper"><div class="apart"><div class="apart__photos mode_right main_flex__nowrap flex__jcontent_between"><div class="apart__photo"><img src="images/content/apart_01_1.jpg" alt="Apartment Photo 1"></div><div class="apart__photo"><img src="images/content/apart_01_2.jpg" alt="Apartment Photo 2"></div></div><h3>Marina Palms / <span>North Miami Beach, FL 33162</span></h3></div><div class="apart"><div class="apart__photos main_flex__nowrap flex__jcontent_between"><div class="apart__photo"><img src="images/content/apart_02_1.jpg" alt="Apartment Photo 1"></div><div class="apart__photo"><img src="images/content/apart_02_2.jpg" alt="Apartment Photo 2"></div></div><h3>Edition Residens / <span>Miami Beach, FL 33139</span></h3></div><div class="apart"><div class="apart__photos mode_left main_flex__nowrap flex__jcontent_between"><div class="apart__photo"><img src="images/content/apart_03_1.jpg" alt="Apartment Photo 1"></div><div class="apart__photo"><img src="images/content/apart_03_2.jpg" alt="Apartment Photo 2"></div></div><h3>Faena House / <span>Miami Beach, FL 33140</span></h3></div><div id="gallery__view_all_btn" class="button_wrapper"><a href="#" class="button button_inline">view all</a></div></div></section><section id="consultation" class="section"><div class="section__title"><h2>consultation</h2><div class="section__title_decoration main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"><div class="line"></div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13"><g id="" data-name=""><path class="" d="M9.85,13h.21l3.58-7.08,6,3.75.36,0L16.94,0,14.86.29l1.8,5.4-4-2.38-.73,1.53h0L10,8.79,8.34,5.31l-1.75,1ZM.36,9.67l9.64-6,1.44.86L12.16,3l-2-1.21H9.88L3.34,5.68,5.14.28,3.06,0,0,9.69Z"/></g></svg><div class="line"></div></div></div><div class="wrapper main_flex__nowrap flex__jcontent_between flex__align-items_start"><div class="consultation__left"><h3>How long have<br>you do yourself a gift?</h3><p>The procedural change mezzo forte starts izoritmichesky pickup at these moments stop LA Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant historical</p></div><div class="consultation__right"><form action="" name="consultation" id="consultation_form"><div class="form__field"><input type="text" placeholder="name" class="input"></div><div class="form__field"><input type="text" placeholder="phone" class="input"></div><div class="form__field"><input type="text" placeholder="email" class="input"></div><div class="form__submit"><button type="submit" class="button">consultation</button></div></form></div></div></section><section id="testimonials" class="section"><div class="section__title"><h2>testimonials</h2><div class="section__title_decoration main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"><div class="line"></div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13"><g id="" data-name=""><path class="" d="M9.85,13h.21l3.58-7.08,6,3.75.36,0L16.94,0,14.86.29l1.8,5.4-4-2.38-.73,1.53h0L10,8.79,8.34,5.31l-1.75,1ZM.36,9.67l9.64-6,1.44.86L12.16,3l-2-1.21H9.88L3.34,5.68,5.14.28,3.06,0,0,9.69Z"/></g></svg><div class="line"></div></div></div><div id="slider" class="wrapper main_flex__nowrap flex__jcontent_between flex__align-content_center flex__align-items_start"><div class="testimonial"><div class="testimonial__photo"><img src="images/content/person_1.jpg" alt="Person 1 Photo"></div><h4 class="testimonial__name">Stev Joni</h4><div class="testimonial__position">Founder Lucoil</div><div class="testimonial__description"><p>Nice work, Certificates National Association of Realtors (USA).</p></div></div><div class="testimonial"><div class="testimonial__photo"><img src="images/content/person_2.jpg" alt="Person 2 Photo"></div><h4 class="testimonial__name">Alisher Usmanov</h4><div class="testimonial__position">Ural Steel</div><div class="testimonial__description"><p>My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy with all my heart.<br>I'm all alone and blissfully happy in the local edge. as if created for the likes of me.</p></div></div><div class="testimonial"><div class="testimonial__photo"><img src="images/content/person_3.jpg" alt="Person 3 Photo"></div><h4 class="testimonial__name">Алексей Мордашов</h4><div class="testimonial__position">ГазПром</div><div class="testimonial__description"><p>When my lovely valley of steam<br>rises and half-day sun is above an impermeable. thicket</p></div></div><div class="testimonial"><div class="testimonial__photo"><img src="images/content/person_1.jpg" alt="Person 1 Photo"></div><h4 class="testimonial__name">Stev Joni</h4><div class="testimonial__position">Founder Lucoil</div><div class="testimonial__description"><p>Nice work, Certificates National Association of Realtors (USA).</p></div></div><div class="testimonial"><div class="testimonial__photo"><img src="images/content/person_2.jpg" alt="Person 2 Photo"></div><h4 class="testimonial__name">Alisher Usmanov</h4><div class="testimonial__position">Ural Steel</div><div class="testimonial__description"><p>My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy with all my heart.<br>I'm all alone and blissfully happy in the local edge. as if created for the likes of me.</p></div></div><div class="testimonial"><div class="testimonial__photo"><img src="images/content/person_3.jpg" alt="Person 3 Photo"></div><h4 class="testimonial__name">Алексей Мордашов</h4><div class="testimonial__position">ГазПром</div><div class="testimonial__description"><p>When my lovely valley of steam<br>rises and half-day sun is above an impermeable. thicket</p></div></div></div></section><section id="contact" class="section"><div class="section__title"><h2>contact</h2><div class="section__title_decoration main_flex__nowrap flex__align-content_center flex__align-items_center flex__jcontent_between"><div class="line"></div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13"><g id="" data-name=""><path class="" d="M9.85,13h.21l3.58-7.08,6,3.75.36,0L16.94,0,14.86.29l1.8,5.4-4-2.38-.73,1.53h0L10,8.79,8.34,5.31l-1.75,1ZM.36,9.67l9.64-6,1.44.86L12.16,3l-2-1.21H9.88L3.34,5.68,5.14.28,3.06,0,0,9.69Z"/></g></svg><div class="line"></div></div></div><div class="wrapper main_flex__nowrap flex__jcontent_between flex__align-content_flex-start flex__align-items_start"><div class="contact__left"><p><a href="mailto:hello@miami.com">Hello@miami.com</a></p><p>8 800 678 78 78<br>8 800 700 98 98</p><p>400 first ave. n.<br>suite 700<br>Minneapolis, MN 55401</p></div><div class="contact__right"><form action="" name="contact" id="contact_form"><div class="form__field"><input type="text" placeholder="name" class="input"></div><div class="form__field"><input type="text" placeholder="email" class="input"></div><div class="form__field"><textarea class="textarea" name="message" placeholder="message" id=""></textarea></div><div class="form__submit"><button class="button">write to us</button></div></form></div></div></section><footer class="main_flex flex__align-content_center flex__align-items_center flex__jcontent_center"><div class="footer__logo"><svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 448.6 293.9" style="enable-background:new 0 0 448.6 293.9;" xml:space="preserve"><style type="text/css">.st0{fill:#FFFFFF;}</style><g><path class="st0" d="M299.9,130.3c3.4,0,6.2,2.7,6.2,6c0,3.4-2.7,6.1-6.2,6.1c-3.5,0-6.3-2.7-6.3-6.1
                        C293.6,132.9,296.4,130.3,299.9,130.3L299.9,130.3z M299.8,131.5c-2.6,0-4.7,2.2-4.7,4.8c0,2.7,2,4.8,4.7,4.8
                        c2.6,0,4.6-2.1,4.6-4.8C304.5,133.7,302.5,131.5,299.8,131.5L299.8,131.5z M298.9,139.5h-1.4v-6c0.6-0.1,1.3-0.2,2.3-0.2
                        c1.1,0,1.7,0.2,2.1,0.5c0.4,0.3,0.6,0.7,0.6,1.3c0,0.7-0.6,1.2-1.3,1.4v0.1c0.6,0.2,0.9,0.7,1.1,1.5c0.2,0.9,0.3,1.3,0.4,1.5h-1.5
                        c-0.2-0.2-0.3-0.7-0.5-1.5c-0.1-0.6-0.5-0.9-1.3-0.9h-0.7V139.5z M298.9,136.1h0.7c0.8,0,1.4-0.3,1.4-0.9c0-0.6-0.4-0.9-1.3-0.9
-                       c-0.4,0-0.6,0-0.8,0.1V136.1z"/>
-                   <polygon class="st0" points="212,0 209.7,0 171,75 106.2,35.2 102.3,35.1 135.4,137.6 157.8,134.6 138.4,77.5 181.7,102.6 
-                       189.6,86.4 189.6,86.3 210.6,44.6 228.3,81.4 247.2,70.4 	"/>
-                   <polygon class="st0" points="314.5,35.2 210.4,98.5 194.8,89.4 187.1,105.7 209,118.5 210.4,118.5 211.7,118.5 282.3,77.5 
-                       262.9,134.6 285.3,137.6 318.4,35.1 	"/>
-               </g>
-               <g>
-                   <polygon class="st0" points="55,206.6 3.7,159.6 0,159.6 0,241.3 16.4,241.3 16.4,192 53.7,226 56.2,226 91.5,192.1 91.5,241.3 
-                       108,241.3 108,159.6 104.2,159.6 	"/>
-                   <rect x="128.2" y="160.9" class="st0" width="16.4" height="80.4"/>
-                   <path class="st0" d="M208.3,158.5l-55.6,82.7h17.6l9.9-14.8h59.3l10.2,14.8H268l-56.7-82.7H208.3z M229.8,212.3h-40.2l19.9-29.6
-                       L229.8,212.3z"/>
-                   <polygon class="st0" points="329.8,206.6 278.5,159.6 274.8,159.6 274.8,241.3 291.2,241.3 291.2,192 328.4,226 330.9,226 
-                       366.3,192.1 366.3,241.3 382.7,241.3 382.7,159.6 379,159.6 	"/>
-                   <rect x="403" y="160.9" class="st0" width="16.4" height="80.4"/>
-               </g>
-               <path class="st0" d="M23.3,293.9c-13.1,0-22.5-5.5-22.5-15.3c0-9.8,10-15.7,22.2-15.7c9.3,0,13.8,1.7,15.6,2.4v3.6l-0.2,0.1
+                       c-0.4,0-0.6,0-0.8,0.1V136.1z"/><polygon class="st0" points="212,0 209.7,0 171,75 106.2,35.2 102.3,35.1 135.4,137.6 157.8,134.6 138.4,77.5 181.7,102.6 
+                       189.6,86.4 189.6,86.3 210.6,44.6 228.3,81.4 247.2,70.4 	"/><polygon class="st0" points="314.5,35.2 210.4,98.5 194.8,89.4 187.1,105.7 209,118.5 210.4,118.5 211.7,118.5 282.3,77.5 
+                       262.9,134.6 285.3,137.6 318.4,35.1 	"/></g><g><polygon class="st0" points="55,206.6 3.7,159.6 0,159.6 0,241.3 16.4,241.3 16.4,192 53.7,226 56.2,226 91.5,192.1 91.5,241.3 
+                       108,241.3 108,159.6 104.2,159.6 	"/><rect x="128.2" y="160.9" class="st0" width="16.4" height="80.4"/><path class="st0" d="M208.3,158.5l-55.6,82.7h17.6l9.9-14.8h59.3l10.2,14.8H268l-56.7-82.7H208.3z M229.8,212.3h-40.2l19.9-29.6
+                       L229.8,212.3z"/><polygon class="st0" points="329.8,206.6 278.5,159.6 274.8,159.6 274.8,241.3 291.2,241.3 291.2,192 328.4,226 330.9,226 
+                       366.3,192.1 366.3,241.3 382.7,241.3 382.7,159.6 379,159.6 	"/><rect x="403" y="160.9" class="st0" width="16.4" height="80.4"/></g><path class="st0" d="M23.3,293.9c-13.1,0-22.5-5.5-22.5-15.3c0-9.8,10-15.7,22.2-15.7c9.3,0,13.8,1.7,15.6,2.4v3.6l-0.2,0.1
                    c-2.3-1.5-6.4-3.9-15.3-3.9c-10.4,0-17.7,4.4-17.7,13.4c0,8.6,6.3,13,17.9,13c8,0,12-2.1,16-5.2l0.2,0.1v3.8
-                   C37.4,291.5,32,293.9,23.3,293.9z"/>
-               <path class="st0" d="M65,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
+                   C37.4,291.5,32,293.9,23.3,293.9z"/><path class="st0" d="M65,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
                    C86.6,288.7,76.3,293.9,65,293.9z M64.9,291.6c10.9,0,17.2-4.8,17.2-13.1c0-8.4-6.6-13.3-17.2-13.3c-10.5,0-17,4.9-17,13.2
-                   C47.9,286.7,54,291.6,64.9,291.6z"/>
-               <path class="st0" d="M93.4,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
+                   C47.9,286.7,54,291.6,64.9,291.6z"/><path class="st0" d="M93.4,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
                    c-0.2,8.6-0.2,20.7,0,29.8l-0.2,0.2h-3.6c-7.6-7.3-20.1-18.5-28.6-26c-0.1,6-0.1,18.3,0,25.9l-0.2,0.1h-2.5l-0.1-0.1
-                   c0.1-7.4,0.1-22.9,0-29.9L93.4,263.3z"/>
-               <path class="st0" d="M136.9,293.4c0.2-9.3,0.2-22.6,0-29.6l0.2-0.2c3.7-0.1,6.9-0.6,15.4-0.6c12.3,0,23.2,5.1,23.2,15.8
+                   c0.1-7.4,0.1-22.9,0-29.9L93.4,263.3z"/><path class="st0" d="M136.9,293.4c0.2-9.3,0.2-22.6,0-29.6l0.2-0.2c3.7-0.1,6.9-0.6,15.4-0.6c12.3,0,23.2,5.1,23.2,15.8
                    c0,9.6-10.5,15.2-23.2,15.2c-7.5,0-12-0.4-15.4-0.4L136.9,293.4z M141,291c2.6,0.2,4.2,0.7,10.8,0.7c13.1,0,19.3-4.8,19.3-12.9
-                   c0-8.8-6.5-13.6-19.5-13.6c-5.1,0-7.6,0.4-10.6,0.9C140.9,271,140.9,282.8,141,291z"/>
-               <path class="st0" d="M202,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
+                   c0-8.8-6.5-13.6-19.5-13.6c-5.1,0-7.6,0.4-10.6,0.9C140.9,271,140.9,282.8,141,291z"/><path class="st0" d="M202,293.9c-11.3,0-21.6-5.1-21.6-15.4c0-10.7,10.9-15.6,21.6-15.6c10.7,0,21.6,4.8,21.6,15.5
                    C223.6,288.7,213.3,293.9,202,293.9z M201.9,291.6c10.9,0,17.2-4.8,17.2-13.1c0-8.4-6.6-13.3-17.2-13.3c-10.5,0-17,4.9-17,13.2
-                   C184.9,286.7,191.1,291.6,201.9,291.6z"/>
-               <path class="st0" d="M247.9,293.5h-3.8l-0.1-0.1c0.2-9.3,0.2-23,0-29.9l0.2-0.1h3.8l0.2,0.2c-0.1,4.7-0.2,10.9-0.2,17.2
+                   C184.9,286.7,191.1,291.6,201.9,291.6z"/><path class="st0" d="M247.9,293.5h-3.8l-0.1-0.1c0.2-9.3,0.2-23,0-29.9l0.2-0.1h3.8l0.2,0.2c-0.1,4.7-0.2,10.9-0.2,17.2
                    c9.9-6.5,17.1-12,24.3-17.3h5.4l0.1,0.2c-5.3,3.1-11.7,7.4-18.4,12.1c5.6,5.1,13.2,11.9,20.3,17.7l-0.1,0.2h-5.8
-                   c-6.6-6.3-11.5-10.6-17.7-15.6l-8.2,5.7c0,3.4,0.1,6.8,0.2,9.8L247.9,293.5z"/>
-               <path class="st0" d="M284.9,293.3c0.2-9.3,0.2-22.9,0-29.8l0.1-0.2h3.8l0.2,0.1c-0.2,10.4-0.1,20.1,0,29.9l-0.2,0.1H285L284.9,293.3
-                   z"/>
-               <path class="st0" d="M298,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
+                   c-6.6-6.3-11.5-10.6-17.7-15.6l-8.2,5.7c0,3.4,0.1,6.8,0.2,9.8L247.9,293.5z"/><path class="st0" d="M284.9,293.3c0.2-9.3,0.2-22.9,0-29.8l0.1-0.2h3.8l0.2,0.1c-0.2,10.4-0.1,20.1,0,29.9l-0.2,0.1H285L284.9,293.3
+                   z"/><path class="st0" d="M298,263.3h3.8c8.8,8.3,19.6,17.9,28.5,25.7c0.1-6.8,0.1-19.3,0-25.6l0.2-0.1h2.4l0.2,0.2
                    c-0.2,8.6-0.2,20.7,0,29.8l-0.2,0.2h-3.6c-7.6-7.3-20.1-18.5-28.6-26c-0.1,6-0.1,18.3,0,25.9l-0.2,0.1h-2.5l-0.1-0.1
-                   c0.1-7.4,0.1-22.9,0-29.9L298,263.3z"/>
-               <path class="st0" d="M361.7,293.9c-13,0-22.2-5.4-22.2-15.3c0-9.6,10.1-15.7,22-15.7c9.9,0,14.5,1.7,16.3,2.5v4l-0.2,0.1
+                   c0.1-7.4,0.1-22.9,0-29.9L298,263.3z"/><path class="st0" d="M361.7,293.9c-13,0-22.2-5.4-22.2-15.3c0-9.6,10.1-15.7,22-15.7c9.9,0,14.5,1.7,16.3,2.5v4l-0.2,0.1
                    c-2.2-1.8-6.1-4.3-16-4.3c-10.5,0-17.5,4.5-17.5,13.4c0,9,6,13,17.6,13c6.1,0,9.8-1.1,13.2-2.4c0.1-3.4,0.1-5.4,0-10.5l0.2-0.2h3.8
-                   l0.2,0.1c-0.2,4.9-0.2,7.7,0,12.1C374.3,292.7,369.4,293.9,361.7,293.9z"/>
-               <path class="st0" d="M409.7,280c-4.7-0.8-11.9-0.1-18.2-1.5c-4.3-1-6.6-3.2-6.6-6.9c0-5.2,5-8.7,16.1-8.7c8.9,0,13.3,1.8,15,2.8v3.5
+                   l0.2,0.1c-0.2,4.9-0.2,7.7,0,12.1C374.3,292.7,369.4,293.9,361.7,293.9z"/><path class="st0" d="M409.7,280c-4.7-0.8-11.9-0.1-18.2-1.5c-4.3-1-6.6-3.2-6.6-6.9c0-5.2,5-8.7,16.1-8.7c8.9,0,13.3,1.8,15,2.8v3.5
                    l-0.2,0.1c-2-1.7-6.4-4.2-15-4.2c-10.1,0-12.6,2.9-12.6,5.7c0,2.5,1.6,3.9,4.8,4.5c4.9,1,11.7,0.4,17.5,1.3c5,0.7,8,2.8,8,6.9
                    c0,5.8-5.4,10.3-17.9,10.3c-9,0-14.3-2.1-16.5-3.5v-3.9l0.2-0.1c3.5,3.1,8.3,5.3,16.5,5.3c10.4,0,14.1-3,14.1-6.8
-                   C415,282.4,413.3,280.6,409.7,280z"/>
-               <path class="st0" d="M436.5,160.4v1.6h-3v7.9h-1.9V162h-3v-1.6H436.5z M446.7,169.9l-0.3-5.6c0-0.7,0-1.6-0.1-2.6h-0.1
+                   C415,282.4,413.3,280.6,409.7,280z"/><path class="st0" d="M436.5,160.4v1.6h-3v7.9h-1.9V162h-3v-1.6H436.5z M446.7,169.9l-0.3-5.6c0-0.7,0-1.6-0.1-2.6h-0.1
                    c-0.2,0.8-0.5,1.9-0.8,2.8l-1.7,5.3h-2l-1.7-5.4c-0.2-0.7-0.5-1.8-0.7-2.7h-0.1c0,0.9,0,1.8-0.1,2.6l-0.3,5.6H437l0.7-9.5h2.9
-                   l1.6,4.6c0.2,0.7,0.4,1.4,0.6,2.4h0.1c0.2-0.8,0.5-1.7,0.6-2.3l1.6-4.7h2.8l0.7,9.5H446.7z"/>
-               </svg>
-            </div>
-            <!-- end of .footer__logo -->
-
-            <div class="footer__copyright">
-                © 2018 Miami.
-            </div>
-            <!-- end of .footer__copyright -->
-        </footer>
-        <!-- end of .footer -->
-
-        <div class="" id="modal_box">
-            <div id="modal_box__close">
-                <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 47.971 47.971" style="enable-background:new 0 0 47.971 47.971;" xml:space="preserve">
-                    <g>
-                        <path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
+                   l1.6,4.6c0.2,0.7,0.4,1.4,0.6,2.4h0.1c0.2-0.8,0.5-1.7,0.6-2.3l1.6-4.7h2.8l0.7,9.5H446.7z"/></svg></div><div class="footer__copyright">© 2018 Miami.</div></footer><div class="" id="modal_box"><div id="modal_box__close"><svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 47.971 47.971" style="enable-background:new 0 0 47.971 47.971;" xml:space="preserve"><g><path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
                             c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242
                             C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879
-                            s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"/>
-                    </g>
-                </svg>
-            </div>
-            <!-- end of .modal_box__close -->
-
-            <div class="modal_box__content">
-                <form action="" name="call_to_order" id="call_to_order_form">
-                    <div class="form__field">
-                        <input type="text" placeholder="name" class="input">
-                    </div>
-                    <div class="form__field">
-                        <input type="text" placeholder="phone" class="input">
-                    </div>
-                    <div class="form__submit">
-                        <button type="submit" class="button">order</button>
-                    </div>
-                </form>
-            </div>
-            <!-- end of .modal_box__content -->
-        </div>
-        <!-- end of #modal_box -->
-
-        <div id="main_page__hide"></div>
-    </div>
-    <!-- end of page-wrapper -->
-
-    <!-- Add all our scripts -->
-    <script src="js/vendors/jquery.min.js"></script>
-    <script src="js/vendors/slick.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+                            s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"/></g></svg></div><div class="modal_box__content"><form action="" name="call_to_order" id="call_to_order_form"><div class="form__field"><input type="text" placeholder="name" class="input"></div><div class="form__field"><input type="text" placeholder="phone" class="input"></div><div class="form__submit"><button type="submit" class="button">order</button></div></form></div></div><div id="main_page__hide"></div></div><script src="js/vendors/jquery.min.js"></script><script src="js/vendors/slick.min.js"></script><script src="js/main.js"></script></body></html>
