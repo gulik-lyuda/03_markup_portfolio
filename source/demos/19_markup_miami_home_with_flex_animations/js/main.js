@@ -25,22 +25,21 @@ $(function(){
     });
 
 // add slider for the Testimonials section with different slides for mobile devices & computers
-    if ( window.innerWidth < 1024 ) {
-        $('#slider').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000
-        });
-    } else {
-        $('#slider').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000
-        });
-    }
-    
+    $('#slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 // load all apartments in the Gallery section by clicking the button "View all"
     $('#gallery__view_all_btn').click(function(e){
         // in real case we'll get these data using AJAX
